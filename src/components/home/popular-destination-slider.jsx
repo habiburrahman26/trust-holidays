@@ -106,14 +106,15 @@ const PopularDestinationSlider = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Most Popular Destinations</h2>
-        <p className="text-gray-600 max-w-3xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto px-4 pt-24">
+      <div className="text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-medium mb-2.5">Most Popular Destinations</h2>
+        <p className="text-black/50 mb-0.5">
           Expand your travel horizons with new facets! Explore the world by
-          choosing your ideal travel destinations in Asia, Europe, America,
-          Australia and more with Trust Holidays.
+          choosing your ideal travel destinations in Asia,
         </p>
+        <p className="text-black/50 mb-0.5"> Europe, America,
+        Australia and more with Trust <span className='text-primary'>Holi</span>days.</p>
       </div>
 
       <div className="relative h-[500px] mb-8 overflow-hidden">
@@ -144,7 +145,7 @@ const PopularDestinationSlider = () => {
             <button
               key={dotIndex}
               className={`h-2 w-2 rounded-full transition-all duration-300 ${
-                i === 2 ? 'bg-primary' : 'bg-gray-300 hover:bg-gray-400'
+                i === 2 ? 'bg-primary' : 'bg-lightGray'
               } ${opacity}`}
               onClick={() => handleDotClick(dotIndex)}
               aria-label={`Go to slide ${dotIndex + 1}`}

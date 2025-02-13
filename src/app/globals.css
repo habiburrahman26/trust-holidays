@@ -15,7 +15,7 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 36 100% 56%;
+    --primary: 28 94% 61%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -145,4 +145,90 @@ body {
   animation: fadeOut 700ms ease-in-out forwards;
 }
 
+/* 
+*********************************************************
+******************* SLIDER START******************
+*********************************************************
+*/
 
+
+/* Custom styles for the slider */
+.my-slider .slick-list {
+  margin: 0 -8px;
+}
+
+.my-slider .slick-slide > div {
+  padding: 0 8px;
+}
+
+.my-slider .slick-dots {
+  bottom: -40px;
+}
+
+.my-slider .slick-dots li{
+  margin: 0px !important;
+}
+
+.my-slider .slick-dots li button:before {
+  font-size: 10px;
+  color: #d9d9d9;
+  opacity: 0.25;
+}
+
+.my-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #FD983D;
+}
+
+.my-slider .slick-prev,
+.my-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+.my-slider .slick-prev:hover,
+.my-slider .slick-next:hover {
+  background-color: var(--primary);
+}
+
+.my-slider .slick-prev:before,
+.my-slider .slick-next:before {
+  font-size: 24px;
+  opacity: 1;
+}
+
+.my-slider .slick-prev {
+  left: -50px;
+}
+
+.my-slider .slick-next {
+  right: -50px;
+}
+
+@media (max-width: 1280px) {
+  .my-slider .slick-prev {
+    left: -40px;
+  }
+  .my-slider .slick-next {
+    right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-slider .slick-prev {
+    left: -30px;
+  }
+  .my-slider .slick-next {
+    right: -30px;
+  }
+}
+
+
+/* 
+*********************************************************
+******************* SLIDER END******************
+*********************************************************
+*/
