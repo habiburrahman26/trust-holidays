@@ -49,6 +49,7 @@ export default {
 			lightGray: 'hsl(var(--light-gray))',
 			lighterGray: 'hsl(var(--lighter-gray))',
 			darkGray: 'hsl(var(--dark-gray))',
+			darkGray2: 'hsl(var(--dark-gray-2))',
 			lighterGray2: 'hsl(var(--lighter-gray-2))',
 			lightPink: 'hsl(var(--light-pink))',
 			

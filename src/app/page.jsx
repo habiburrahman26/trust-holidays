@@ -2,6 +2,7 @@ import BestHotel from '@/components/home/best-hotel';
 import BestPlace from '@/components/home/best-place';
 import ExploreCountry from '@/components/home/explore-country';
 import FlightRoute from '@/components/home/flight-route';
+import Hero from '@/components/home/hero';
 import PopularDestinationSlider from '@/components/home/popular-destination-slider';
 import SpecialDeals from '@/components/home/special-deals';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,7 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <>
+      <Hero />
       <SpecialDeals />
       <PopularDestinationSlider />
       <BestHotel />
