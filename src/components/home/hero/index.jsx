@@ -3,7 +3,7 @@ import HeroTabs from './hero-tabs';
 const Hero = () => {
   return (
     <section>
-      <div className="relative bg-white">
+      <div className="relative bg-background-secondary">
         <div className="absolute inset-0 max-h-[280px]">
           <div className="hero-overlay absolute inset-0"></div>
           <video
@@ -16,7 +16,7 @@ const Hero = () => {
           </video>
         </div>
 
-        <div className='relative z-10 pt-28'>
+        <div className='relative z-10 pt-28 pb-20'>
           <div className="text-center text-white z-10">
             <h3 className="text-2xl font-medium tracking-[1rem]">Welcome to</h3>
             <h1 className="text-7xl font-bold">
