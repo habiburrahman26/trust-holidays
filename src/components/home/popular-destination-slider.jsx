@@ -106,7 +106,7 @@ const PopularDestinationSlider = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 pt-24">
+    <div className="w-full px-40 pt-24">
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-medium mb-2.5">Most Popular Destinations</h2>
         <p className="text-black/50 mb-0.5">

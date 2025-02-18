@@ -25,7 +25,6 @@ const SpecialDeals = () => {
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2FMobile-recharge-10%2525-home-page-thumbnail.png&w=384&q=75',
     },
-  
   ];
 
   const settings = {
@@ -59,28 +58,24 @@ const SpecialDeals = () => {
     ],
   };
   return (
-    <div className="bg-background-secondary">
-      <div className="max-w-7xl mx-auto pb-24">
-        <h3 className="text-2xl md:text-3xl font-medium mb-10">
-          Special Deals
-        </h3>
+    <div className="px-40 bg-background-secondary pb-24">
+      <h3 className="text-2xl md:text-3xl font-medium mb-10">Special Deals</h3>
 
-        <Slider {...settings} className="my-slider -mx-2">
-          {destinations.map((destination, index) => (
-            <div
-              key={index}
-              className="relative h-[168px] rounded-lg overflow-hidden"
-            >
-              <Image
-                src={destination.image}
-                alt={destination.name}
-                fill
-                className="w-full h-full object-cover group-hover:scale-105 transition-all"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <Slider {...settings} className="my-slider -mx-2">
+        {destinations.map((destination, index) => (
+          <div
+            key={index}
+            className="relative h-[168px] rounded-lg overflow-hidden"
+          >
+            <Image
+              src={destination.image}
+              alt={destination.name}
+              fill
+              className="w-full h-full object-cover group-hover:scale-105 transition-all"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

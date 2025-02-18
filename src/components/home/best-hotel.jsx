@@ -73,7 +73,7 @@ const BestHotel = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto py-24">
+    <div className="px-40 py-24">
       <div className="text-center mb-10">
         <h1 className="text-2xl md:text-3xl font-medium mb-2.5">
           Best Hotels in <span className="text-red">Bangladesh</span> for Your

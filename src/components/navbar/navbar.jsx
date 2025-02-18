@@ -1,18 +1,18 @@
 import Image from 'next/image';
-import AppDownload from '../home/app-download';
+import AppDownload from './app-download';
 import companyLogo from '@/assets/icon/company-logo.svg';
 import notificationIcon from '@/assets/icon/notification.svg';
 import bdIcon from '@/assets/icon/country/bd.svg';
 import arrowIcon from '@/assets/icon/arrow.svg';
 import Link from 'next/link';
-import { Button } from './button';
+import { Button } from '../ui/button';
 
 const Navbar = () => {
   return (
     <header>
       <AppDownload />
-      <div className='bg-background-secondary'>
-        <nav className="max-w-7xl mx-auto h-[70px] flex items-center justify-between">
+      <div className='bg-background-secondary px-40'>
+        <nav className="h-[70px] flex items-center justify-between">
             <div className='flex items-center gap-7'>
                 <Image src={companyLogo} alt="Company Logo" className="w-8 h-8"/>
                 <h3 className='text-3xl font-medium'>Trust <span className='text-primary'>Holi</span>days</h3>

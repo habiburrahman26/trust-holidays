@@ -14,8 +14,8 @@ export default function Home() {
       <SpecialDeals />
       <PopularDestinationSlider />
       <BestHotel />
-      <div className="bg-background-secondary">
-        <div className="max-w-7xl mx-auto flex items-center justify-between bg-black px-32 py-10 mb-24">
+      <div className="bg-background-secondary px-40">
+        <div className="flex items-center justify-between bg-black px-32 py-10 mb-24">
           <div>
             <h3 className="text-3xl font-medium text-white pb-2.5">
               Members can save on lifestyle

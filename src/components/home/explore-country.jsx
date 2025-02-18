@@ -63,7 +63,7 @@ const ExploreCountry = () => {
     ],
   };
   return (
-    <div className="max-w-7xl mx-auto pb-24">
+    <div className="pb-24">
       <div className="mb-10">
         <h1 className="text-2xl md:text-3xl font-medium mb-2.5">
           Explore the country of Bangladesh.

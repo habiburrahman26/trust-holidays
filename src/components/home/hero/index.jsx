@@ -12,7 +12,8 @@ const Hero = () => {
             loop
             className="w-full h-full bg-cover object-cover object-center bg-no-repeat"
           >
-            <source src="https://utility-assets.s3.ap-southeast-1.amazonaws.com/hero-bg-cover.mp4" />
+            <source src="https://res.cloudinary.com/dxtqg7ofg/video/upload/hero_ydmerb.mp4" />
+            your browser doesn't support video 
           </video>
         </div>
 

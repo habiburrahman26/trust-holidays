@@ -7,6 +7,11 @@ const nextConfig = {
             hostname: 'sharetrip.net',
             port: '',
           },
+          {
+            protocol: 'https',
+            hostname: 'res.cloudinary.com',
+            port: '',
+          },
         ],
       },
 };
