@@ -18,6 +18,8 @@ import promotionActiveIcon from '@/assets/icon/promotion-active.svg';
 import Image from 'next/image';
 import { useState } from 'react';
 import FlightTab from './flight-tab';
+import { Hotel } from './hotel/hotel';
+import Tour from './tour-tab/tour';
 
 const tabs = [
   {
@@ -32,8 +34,15 @@ const tabs = [
     label: 'Hotel',
     icon: hotelIcon,
     activeIcon: hotelActiveIcon,
+    component: Hotel,
   },
-  { value: 'tour', label: 'Tour', icon: tourIcon, activeIcon: tourActiveIcon },
+  {
+    value: 'tour',
+    label: 'Tour',
+    icon: tourIcon,
+    activeIcon: tourActiveIcon,
+    component: Tour,
+  },
   { value: 'visa', label: 'Visa', icon: visaIcon, activeIcon: visaActiveIcon },
   {
     value: 'promotions',
@@ -69,7 +78,7 @@ const HeroTabs = () => {
           ))}
         </TabsList>
         {tabs.map((tab) => (
-          <TabsContent className='h-auto' key={tab.value} value={tab.value}>
+          <TabsContent className="h-auto" key={tab.value} value={tab.value}>
             <div className="px-10 pt-7 pb-12">
               {tab.component && <tab.component />}
             </div>
