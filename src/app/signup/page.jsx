@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import bgImage from '@/assets/images/auth-bg.png';
 
-const Login = () => {
+const Signup = () => {
   return (
     <section
       className="h-[100vh] justify-center bg-background-secondary pt-10"
@@ -20,21 +20,32 @@ const Login = () => {
       <div className="bg-white max-w-lg mx-auto px-14 py-12 shadow-lg rounded">
         <div className="text-center">
           <h2 className=" text-2xl md:text-3xl font-medium mb-2.5">
-            Login your Account
+            Please Sign up
           </h2>
-          <p className="text-black/50">You need to login first to Continue</p>
+          <p className="text-black/50">Create an account and get the Deals</p>
         </div>
 
-        <form className="space-y-3 pt-10">
-          <div >
+        <form className="space-y-3">
+          <div className="pt-10">
             <Label htmlFor="email" className="text-black/80 pb-2 inline-block">
               Email
             </Label>
             <Input
               id="email"
               name="email"
-              className="shadow-none border-none py-5 bg-background-secondary focus-visible:ring-primary placeholder:text-black/30"
+              className="shadow-none border-none py-5 bg-background-secondary focus-visible:ring- placeholder:text-black/30"
               placeholder="example@gmail.com"
+            />
+          </div>
+          <div>
+            <Label htmlFor="email" className="text-black/80 pb-2 inline-block">
+              Mobile Number
+            </Label>
+            <Input
+              id="email"
+              name="email"
+              className="shadow-none border-none py-5 bg-background-secondary focus-visible:ring-primary placeholder:text-black/30"
+              placeholder="017xxxxxxxx"
             />
           </div>
           <div>
@@ -52,15 +63,8 @@ const Login = () => {
             />
           </div>
 
-          <Link
-            href="#"
-            className="inline-block text-primary float-right font-medium text-sm"
-          >
-            Forgot Password?
-          </Link>
-
-          <div className='pt-10'>
-            <Button className="w-full shadow-none py-5">Login</Button>
+          <div className="pt-4">
+            <Button className="w-full shadow-none py-5">Sign Up</Button>
           </div>
         </form>
 
@@ -82,9 +86,9 @@ const Login = () => {
         </div>
 
         <div className="text-black/50 text-sm text-center pt-7">
-          Don’t have an account?{' '}
-          <Link href="/signup" className="font-semibold text-primary">
-            Sign Up
+          Already have an account?{' '}
+          <Link href="/login" className="font-semibold text-primary">
+            Login
           </Link>
         </div>
       </div>
@@ -92,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

@@ -13,10 +13,10 @@ const Navbar = () => {
       <AppDownload />
       <div className='bg-background-secondary px-40'>
         <nav className="h-[70px] flex items-center justify-between">
-            <div className='flex items-center gap-7'>
+            <Link href="/" className='flex items-center gap-7'>
                 <Image src={companyLogo} alt="Company Logo" className="w-8 h-8"/>
                 <h3 className='text-3xl font-medium'>Trust <span className='text-primary'>Holi</span>days</h3>
-            </div>
+            </Link>
 
             <div className='flex items-center gap-7'>
                 <div className='flex items-center gap-2.5 cursor-pointer'>
