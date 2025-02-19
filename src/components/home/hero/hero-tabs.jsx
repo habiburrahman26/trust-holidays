@@ -20,6 +20,7 @@ import { useState } from 'react';
 import FlightTab from './flight-tab';
 import { Hotel } from './hotel/hotel';
 import Tour from './tour-tab/tour';
+import VisaTab from './visa-tab';
 
 const tabs = [
   {
@@ -43,7 +44,13 @@ const tabs = [
     activeIcon: tourActiveIcon,
     component: Tour,
   },
-  { value: 'visa', label: 'Visa', icon: visaIcon, activeIcon: visaActiveIcon },
+  {
+    value: 'visa',
+    label: 'Visa',
+    icon: visaIcon,
+    activeIcon: visaActiveIcon,
+    component: VisaTab,
+  },
   {
     value: 'promotions',
     label: 'Promotions',
