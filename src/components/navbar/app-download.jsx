@@ -17,7 +17,7 @@ const AppDownload = () => {
   ];
 
   return (
-      <div className="px-40 h-10 flex items-center justify-between text-sm">
+      <div className="hidden section-container h-10 lg:flex items-center justify-between text-sm">
         {/* Left - App Download Link */}
         <div className="flex items-center gap-11">
           <div className='flex items-center gap-2'>

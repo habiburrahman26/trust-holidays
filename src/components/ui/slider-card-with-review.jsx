@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SliderCardWithReview = ({link, image, alt, name :title, review, rating}) => {
   return (
     <Link href="#" key={link} className="block group transition-all">
-    <div className="relative h-[300px] rounded-lg overflow-hidden">
+    <div className="relative h-[250px] sm:h-[300px] rounded-lg overflow-hidden">
       <Image
         src={image}
         alt={alt}

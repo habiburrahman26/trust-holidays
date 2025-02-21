@@ -10,15 +10,15 @@ import masterCard from '@/assets/icon/master-card.svg';
 const Footer = () => {
   return (
     <footer>
-      <div className="px-40 bg-background-secondary">
-        <div className="w-full bg-primary h-24"></div>
+      <div className="section-container bg-background-secondary">
+        <div className="w-full bg-primary h-12 md:h-24"></div>
 
-        <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
+        <div className="py-4 md:py-8 lg:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-7 lg:gap-10">
             {/* Company Info */}
-            <div className="lg:col-span-2">
+            <div className="sm:col-span-2 md:col-span-4 lg:col-span-2">
               <div className="space-y-6">
-                <h2 className="text-3xl font-medium">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium">
                   Trust <span className="text-orange-500">Holi</span>days
                 </h2>
                 <p className="max-w-md text-black/50 text-sm">
@@ -40,11 +40,11 @@ const Footer = () => {
             </div>
 
             {/* Services */}
-            <div className="space-y-4">
+            <div className="space-y-2 md:space-y-4">
               <h3 className="font-semibold text-black uppercase tracking-wider">
                 SERVICES
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1.5 md:space-y-2.5">
                 {['Flight', 'Hotel', 'Holiday', 'Visa'].map((item) => (
                   <li key={item}>
                     <Link
@@ -59,11 +59,11 @@ const Footer = () => {
             </div>
 
             {/* Video Links */}
-            <div className="space-y-4">
+            <div className="space-y-2 md:space-y-4">
               <h3 className="font-semibold text-gray-900 uppercase tracking-wider">
                 VIDEO LINKS
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1.5 md:space-y-2.5">
                 {[
                   'Travel Guide',
                   'Travel Advisory',
@@ -83,11 +83,11 @@ const Footer = () => {
             </div>
 
             {/* Explore */}
-            <div className="space-y-4">
+            <div className="space-y-2 md:space-y-4">
               <h3 className="font-semibold text-black uppercase tracking-wider">
                 Explore
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1.5 md:space-y-2.5">
                 {[
                   'Travel Guide',
                   'Travel Advisory',
@@ -107,11 +107,11 @@ const Footer = () => {
             </div>
 
             {/* Contact & Download */}
-            <div className="space-y-4">
+            <div className="space-y-2 md:space-y-4">
               <h3 className="text-sm font-semibold text-black uppercase tracking-wider">
                 CONTACT US
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1.5 md:space-y-2.5">
                 <li>
                   <div className="flex items-center gap-2 text-sm">
                     <span className="text-black/50">
@@ -138,7 +138,7 @@ const Footer = () => {
                 </li>
               </ul>
 
-              <div className="space-y-2.5 pt-4">
+              <div className="space-y-1.5 md:space-y-2.5 pt-4">
                 <h4 className="font-semibold">DOWNLOAD APP</h4>
                 <Link href="#" className="inline-block">
                   <Image
@@ -155,11 +155,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='px-40'>
+      <div className='section-container'>
         <div className="py-7 flex flex-col items-center justify-center gap-6">
           <p className="font-semibold text-black">We Accept</p>
 
-          <div className="flex items-center gap-9">
+          <div className="flex items-center gap-4 sm:gap-9">
             <Image src={bkash} alt="bkash" width={70} height={50} />
             <Image src={nagad} alt="nagad" width={60} height={50} />
             <Image src={visa} alt="visa" width={50} height={50} />
@@ -167,28 +167,28 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center border-t pb-6 text-sm text-black/50">
-          <div className="flex pt-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center border-t pb-6 text-xs md:text-sm text-black/50">
+          <div className="flex pt-3 sm:pt-6">
             <Link
               href="#"
-              className="pr-4 before-content relative hover:text-primary transition-all"
+              className="pr-2 md:pr-4 before-content relative hover:text-primary transition-all"
             >
               Support Center
             </Link>
             <Link
               href="#"
-              className="px-4 before-content relative hover:text-primary transition-all"
+              className="px-2 md:px-4 before-content relative hover:text-primary transition-all"
             >
               Payment Security
             </Link>
             <Link
               href="#"
-              className="pl-4 before-content relative hover:text-primary transition-all"
+              className="pl-2 md:pl-4 relative hover:text-primary transition-all"
             >
               Privacy Policy
             </Link>
           </div>
-          <p className="pt-6">
+          <p className="pt-3 sm:pt-6">
             Copyright ©{new Date().getFullYear()} Trust{' '}
             <span className="text-primary">Hoil</span>days. All Rights Reserved.
           </p>

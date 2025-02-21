@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
+import { settings } from './sliderSetting';
 
 const ExploreCountry = () => {
   const destinations = [
@@ -32,58 +33,28 @@ const ExploreCountry = () => {
     },
   ];
 
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
   return (
     <div className="pb-24">
       <div className="mb-10">
-        <h1 className="text-2xl md:text-3xl font-medium mb-2.5">
+        <h1 className="section-header mb-2.5">
           Explore the country of Bangladesh.
         </h1>
-        <p className="text-black/50 mb-0.5">
+        <p className="section-subheader-content">
           You can experience Bangladesh's rich culture and explore the majestic
-          beauties of Cox's Bazar, Sylhet, Bandarban,
-        </p>
-        <p className="text-black/50">
-          Sajek Valley, Rangamati, etc.{' '}
-          <span className="text-primary font-medium">
-            Start planning your trip now.
-          </span>
+          beauties of Cox's Bazar, Sylhet, Bandarban, Sajek Valley, Rangamati,
+          etc.{' '}
+          <span className="text-primary">Start planning your trip now.</span>
         </p>
       </div>
 
-      <Slider {...settings} className="my-slider -mx-2">
+      <Slider {...settings} className="my-slider sm:-mx-2">
         {destinations.map((destination, index) => (
-          <Link href='#' key={index} className="block px-2 relative rounded-xl overflow-hidden">
-            <div className="aspect-[4/5]">
+          <Link
+            href="#"
+            key={index}
+            className="block px-2 relative rounded-xl overflow-hidden"
+          >
+            <div className="aspect-[3/3] sm:aspect-[4/5] lg:aspect-[4/5]">
               <Image
                 src={destination.image}
                 alt={destination.name}
@@ -93,16 +64,20 @@ const ExploreCountry = () => {
             </div>
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(196, 196, 196, 0.00) 64.47%, #1E1E1E 94.67%)',
+              }}
+            />
 
             {/* Content */}
-            <div className="absolute bottom-0 w-full p-6">
-              <h3 className="text-xl font-medium text-white mb-1">
+            <div className="absolute bottom-0 w-full px-2 py-4 lg:p-6">
+              <h3 className="text-base truncate lg:text-xl font-medium text-white mb-1">
                 {destination.name}
               </h3>
-              <p className="text-white text-sm">
-                {destination.description}
-              </p>
+              <p className="text-white text-sm">{destination.description}</p>
             </div>
           </Link>
         ))}

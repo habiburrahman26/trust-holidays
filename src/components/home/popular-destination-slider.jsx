@@ -66,20 +66,17 @@ const PopularDestinationSlider = () => {
   };
 
   return (
-    <div className="w-full px-40 pt-24">
+    <div className="w-full section-container pt-10 lg:pt-24">
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-medium mb-2.5">
+        <h2 className="section-header mb-2.5">
           Most Popular Destinations
         </h2>
-        <p className="text-black/50 mb-0.5">
+        <p className="section-subheader-content">
           Expand your travel horizons with new facets! Explore the world by
-          choosing your ideal travel destinations in Asia,
-        </p>
-        <p className="text-black/50 mb-0.5">
-          {' '}
-          Europe, America, Australia and more with Trust{' '}
+          choosing your ideal travel destinations in Asia, Europe, America, Australia and more with Trust{' '}
           <span className="text-primary">Holi</span>days.
         </p>
+     
       </div>
 
       <div className="relative h-[500px] mb-8 overflow-hidden ">

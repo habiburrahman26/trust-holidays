@@ -1,3 +1,4 @@
+import Banner from '@/components/home/banner';
 import BestHotel from '@/components/home/best-hotel';
 import BestPlace from '@/components/home/best-place';
 import ExploreCountry from '@/components/home/explore-country';
@@ -14,10 +15,10 @@ export default function Home() {
       <SpecialDeals />
       <PopularDestinationSlider />
       <BestHotel />
-      <div className="bg-background-secondary px-40">
-        <div className="flex items-center justify-between bg-black px-32 py-10 mb-24">
-          <div>
-            <h3 className="text-3xl font-medium text-white pb-2.5">
+      <div className="bg-background-secondary section-container">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-black px-2.5 md:px-16 lg:px-32 py-10 mb-10 md:mb-24">
+          <div className='text-sm md:text-base'>
+            <h3 className="section-header font-medium text-white pb-2.5">
               Members can save on lifestyle
             </h3>
             <p className="text-white/50">
@@ -39,6 +40,7 @@ export default function Home() {
         <BestPlace />
         <FlightRoute />
       </div>
+      <Banner />
     </>
   );
 }

@@ -13,14 +13,18 @@ const FlightRouteCard = ({ to, from }) => {
       className="grid grid-cols-3 items-center  bg-lightGray/20 rounded-lg py-4 px-3.5 group border border-transparent hover:bg-white hover:shadow hover:border hover:border-primary transition-all"
     >
       <div>
-        <h3 className="font-medium truncate group-hover:text-primary transition-colors delay-100">{to.destination}</h3>
+        <h3 className="font-medium truncate group-hover:text-primary transition-colors ">
+          {to.destination}
+        </h3>
         <p className="truncate text-black/50 text-xs">{to.airport}</p>
       </div>
-      <div className='justify-self-center'>
+      <div className="justify-self-center">
         <Image src={planeIcon} alt="flight icon" className="w-6 h-6" />
       </div>
       <div>
-        <h3 className="font-medium truncate group-hover:text-primary transition-colors delay-100">{from.destination}</h3>
+        <h3 className="font-medium truncate group-hover:text-primary transition-colors">
+          {from.destination}
+        </h3>
         <p className="truncate text-black/50 text-xs">{from.airport}</p>
       </div>
     </Link>
@@ -38,18 +42,16 @@ const FlightRoute = () => {
 
   return (
     <div className="pb-24">
-      <div className="text-center mb-10">
-        <h1 className="text-2xl md:text-3xl font-medium mb-2.5">
+      <div className="mb-10">
+        <h1 className="section-header mb-2.5">
           Top Domestic & International Routes
         </h1>
-        <p className="text-black/50 font-medium mb-0.5">
+        <p className="section-subheader-content">
           Make your next trip unforgettable with{' '}
           <span className="text-primary">Holi</span>days! From business class to
-          economy class flights on international
-        </p>
-        <p className="text-black/50">
-          trips or domestic ones, choose from hundreds of airlines.{' '}
-          <Link href="#" className="text-primary font-medium">
+          economy class flights on international trips or domestic ones, choose
+          from hundreds of airlines.{' '}
+          <Link href="#" className="text-primary">
             Buy your ticket now.
           </Link>
         </p>
@@ -82,7 +84,7 @@ const FlightRoute = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {data.map((route, index) => (
           <FlightRouteCard key={index} {...route} />
         ))}

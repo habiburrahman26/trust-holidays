@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section>
       <div className="relative bg-background-secondary">
-        <div className="absolute inset-0 max-h-[320px]">
+        <div className="absolute inset-0 max-h-[350px]">
           <div className="hero-overlay absolute inset-0"></div>
           <video
             autoPlay
