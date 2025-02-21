@@ -4,20 +4,24 @@ const Hero = () => {
   return (
     <section>
       <div className="relative bg-background-secondary">
-        <div className="absolute inset-0 max-h-[280px]">
+        <div className="absolute inset-0 max-h-[320px]">
           <div className="hero-overlay absolute inset-0"></div>
           <video
             autoPlay
             muted
             loop
-            className="w-full h-full bg-cover object-cover object-center bg-no-repeat"
+            className="w-full h-full bg-cover  object-cover object-center bg-no-repeat"
+            style={{
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+            }}
           >
             <source src="https://res.cloudinary.com/dxtqg7ofg/video/upload/hero_ydmerb.mp4" />
             your browser doesn't support video 
           </video>
         </div>
 
-        <div className='relative z-10 pt-28 pb-20'>
+        <div className='relative z-10 pt-44 pb-20'>
           <div className="text-center text-white z-10">
             <h3 className="text-2xl font-medium tracking-[1rem]">Welcome to</h3>
             <h1 className="text-7xl font-bold">

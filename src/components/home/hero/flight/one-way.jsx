@@ -16,7 +16,7 @@ const Oneway = () => {
   return (
     <div className="pt-6 grid grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
       <div className="relative w-full grid grid-cols-2 items-center gap-4">
-        <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3">
+        <div className="hero-small-card">
           <p className="text-black text-xs">From</p>
           <h3 className="text-primary font-medium">Dhaka</h3>
           {/* <input
@@ -36,7 +36,7 @@ const Oneway = () => {
           />
         </div>
 
-        <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3">
+        <div className="hero-small-card">
           <p className="text-black text-xs">To</p>
           <h3 className="text-primary font-medium">Cox’s Bazar</h3>
           {/* <input
@@ -51,7 +51,7 @@ const Oneway = () => {
 
       <Popover>
         <PopoverTrigger asChild>
-          <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3 cursor-pointer">
+          <div className="hero-small-card cursor-pointer">
             <p className="text-black text-xs">Journey Date</p>
             <p>
               <span className="text-primary font-medium">
@@ -79,7 +79,7 @@ const Oneway = () => {
         </PopoverTrigger>
       </Popover>
 
-      <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3">
+      <div className="hero-small-card">
         <p className="text-black text-xs">Select your Ticket class</p>
         <h3 className="text-primary font-medium">1 Traveler</h3>
         {/* <input
@@ -89,8 +89,8 @@ const Oneway = () => {
         <p className="truncate text-black text-xs">Economy Class</p>
       </div>
 
-      <div className="bg-primary flex items-center justify-center p-6 rounded-lg">
-        <Image src={searchIcon} alt="search icon" className="w-6 h-6" />
+      <div className="w-[81px] h-[77px] bg-primary flex items-center justify-center p-6 rounded-lg">
+        <Image src={searchIcon} alt="search icon" className="size-8" />
       </div>
     </div>
   );

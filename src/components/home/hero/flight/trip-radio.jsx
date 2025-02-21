@@ -27,9 +27,9 @@ const TripRadio = ({ selectedTrip, setSelectedTrip }) => {
           <RadioGroupItem
             value={item.value}
             id={item.value}
-            className={`shadow-none ${
+            className={`shadow-none  ${
               selectedTrip === item.value
-                ? 'border-primary bg-primary'
+                ? 'border-primary'
                 : ' border-darkGray2'
             }`}
           />

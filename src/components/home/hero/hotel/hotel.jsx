@@ -57,7 +57,7 @@ export const Hotel = () => {
                 id={item.value}
                 className={`shadow-none ${
                   selectedSearch === item.value
-                    ? 'border-primary bg-primary'
+                    ? 'border-primary'
                     : ' border-darkGray2'
                 }`}
               />
@@ -78,7 +78,7 @@ export const Hotel = () => {
 
       <div className="pt-6 grid grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
         <div className="relative w-full grid grid-cols-2 items-center gap-4">
-          <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3">
+          <div className="hero-small-card">
             <p className="text-black text-xs">City/Hotel/Resort/Area</p>
             <h3 className="text-primary font-medium">Cox’s Bazer</h3>
             {/* <input
@@ -90,7 +90,7 @@ export const Hotel = () => {
 
           <Popover>
             <PopoverTrigger asChild>
-              <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3 cursor-pointer">
+              <div className="hero-small-card cursor-pointer">
                 <p className="text-black text-xs">Check In</p>
                 <p>
                   <span className="text-primary font-medium">
@@ -121,7 +121,7 @@ export const Hotel = () => {
 
         <Popover>
           <PopoverTrigger asChild>
-            <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3 cursor-pointer">
+            <div className="hero-small-card cursor-pointer">
               <p className="text-black text-xs">Check Out</p>
               <p>
                 <span className="text-primary font-medium">
@@ -149,7 +149,7 @@ export const Hotel = () => {
           </PopoverTrigger>
         </Popover>
 
-        <div className="w-full border border-darkGray2/50 rounded-lg px-4 py-3">
+        <div className="hero-small-card">
           <p className="text-black text-xs">Room & Guests</p>
           <h3 className="text-sm">
             <span className="text-primary font-medium text-base">1</span> room,{' '}
@@ -162,8 +162,8 @@ export const Hotel = () => {
           <p className="truncate text-black text-xs">2 Adults</p>
         </div>
 
-        <div className="bg-primary flex items-center justify-center p-6 rounded-lg">
-          <Image src={searchIcon} alt="search icon" className="w-6 h-6" />
+        <div className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
+          <Image src={searchIcon} alt="search icon" className="size-8" />
         </div>
       </div>
     </div>

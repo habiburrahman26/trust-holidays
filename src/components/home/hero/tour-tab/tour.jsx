@@ -50,7 +50,7 @@ const Tour = () => {
                 id={item.value}
                 className={`shadow-none ${
                   selectedSearch === item.value
-                    ? 'border-primary bg-primary'
+                    ? 'border-primary'
                     : ' border-darkGray2'
                 }`}
               />

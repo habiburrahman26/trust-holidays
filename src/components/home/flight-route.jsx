@@ -58,7 +58,7 @@ const FlightRoute = () => {
           <Button
             variant={activeTab === 'domestic' ? 'default' : 'secondary'}
             size="lg"
-            className={`shadow-none mr-3 ${
+            className={`shadow-none mr-3 h-12 ${
               activeTab === 'domestic'
                 ? ''
                 : 'text-black/50 bg-lightGray hover:bg-lightGray/50'
@@ -70,7 +70,7 @@ const FlightRoute = () => {
           <Button
             variant={activeTab === 'international' ? 'default' : 'secondary'}
             size="lg"
-            className={`shadow-none ${
+            className={`shadow-none h-12 ${
               activeTab === 'domestic'
                 ? 'text-black/50 bg-lightGray hover:bg-lightGray/50'
                 : ''
