@@ -49,7 +49,7 @@ const BestHotel = () => {
           Best Hotels in <span className="text-red">Bangladesh</span> for Your
           Next Trip
         </h1>
-        <p className="section-subheader-content">
+        <p className="section-subheader-content mx-auto">
           Luxurious or budget-friendly hotels, villas or resorts, browse
           accommodations at <span className="text-primary">Holi</span>days that
           meet the need.Book Long-term or short-term accommodation from our hotel deals.

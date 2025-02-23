@@ -3,11 +3,17 @@ export const settings = {
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 6,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
   responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
     {
       breakpoint: 1024,
       settings: {

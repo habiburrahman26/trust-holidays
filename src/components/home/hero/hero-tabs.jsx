@@ -62,7 +62,7 @@ const tabs = [
 const HeroTabs = () => {
   const [activeTab, setActiveTab] = useState('flight');
   return (
-    <div className="bg-white rounded-lg max-w-5xl mx-auto shadow z-10">
+    <div className="bg-white rounded-lg max-w-5xl 3xl:max-w-6xl 4xl:max-w-7xl mx-auto shadow z-10">
       <Tabs
         defaultValue="flight"
         value={activeTab}
@@ -73,7 +73,7 @@ const HeroTabs = () => {
             <TabsTrigger
               key={tab.value}
               value={tab.value}
-              className="flex items-center gap-2 py-3.5 border-b-2 border-white data-[state=active]:border-primary rounded-none data-[state=active]:shadow-none"
+              className="flex items-center gap-3.5 py-3.5 border-b-2 border-white data-[state=active]:border-primary rounded-none data-[state=active]:shadow-none"
             >
               <Image
                 src={activeTab === tab.value ? tab.activeIcon : tab.icon}

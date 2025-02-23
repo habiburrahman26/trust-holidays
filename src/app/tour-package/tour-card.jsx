@@ -19,7 +19,7 @@ const CARD_DATA = [
 
 const TourCard = ({name,location,image,days,review,price}) => {
   return (
-    <div className="p-2 pb-4 bg-white rounded-lg shadow-md">
+    <div className="p-2 pb-8 bg-white rounded-lg" style={{boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.08)"}}>
       <div className="relative h-[250px] rounded-lg overflow-hidden">
         <Image
           src={image}
@@ -67,13 +67,13 @@ const TourCard = ({name,location,image,days,review,price}) => {
             <p className="text-xs font-medium text-black/50">
               Price Starts from
             </p>
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               BDT {price}{' '}
               <span className="text-[10px] font-medium text-black">
                 ( per person )
               </span>
             </h3>
-            <p className="font-medium truncate">{name}</p>
+            <p className="text-xl font-medium truncate">{name}</p>
             <div className="flex items-center gap-2 pt-1">
               <Image src={locationIcon} alt="location icon" />
               <span className="text-sm truncate">

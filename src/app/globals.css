@@ -105,7 +105,7 @@ body {
   }
 
   .section-subheader-content {
-    @apply w-full lg:w-3/4 text-black/50 md:font-medium;
+    @apply w-full lg:w-3/4  text-black/50 md:font-medium;
     line-height: 24px
   }
 
@@ -113,6 +113,20 @@ body {
     @apply w-full h-[77px] border border-darkGray2/50 rounded-lg px-4 py-3;
   }
 }
+
+
+.homeSlide {
+  transition: 0.7s;
+  padding: 60px 0px;
+}
+
+
+.homeActiveSlide {
+  transform: scale(1.32, 1.25);
+  opacity: 1;
+  z-index: 10;
+}
+
 
 .transform {
   transform-style: preserve-3d;
@@ -273,3 +287,14 @@ body {
 ******************* SLIDER END******************
 *********************************************************
 */
+
+/* ---break---  */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
