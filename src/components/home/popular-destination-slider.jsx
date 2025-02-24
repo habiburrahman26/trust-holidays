@@ -10,7 +10,9 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/bundle';
+import 'swiper/css/autoplay';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
 const PopularDestinationSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
