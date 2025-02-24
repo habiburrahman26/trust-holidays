@@ -54,9 +54,7 @@ const BestHotel = () => {
           accommodations at <span className="text-primary">Holi</span>days that
           meet the need.Book Long-term or short-term accommodation from our hotel deals.
         </p>
-        
       </div>
-
       
         <Slider {...settings} className="my-slider sm:-mx-2">
           {destinations.map((destination, index) => (

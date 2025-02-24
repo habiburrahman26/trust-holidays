@@ -5,6 +5,12 @@ import Image from 'next/image';
 import { destinations } from '@/data/data';
 import Slider from 'react-slick';
 import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/bundle';
 
 const PopularDestinationSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -14,14 +20,15 @@ const PopularDestinationSlider = () => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     centerMode: true,
     adaptiveHeight: true,
     accessibility: false,
     focusOnSelect: true,
     centerPadding: '0px',
+    // adaptiveHeight:true,
     beforeChange: (_, index) => {
       setActiveSlide(index);
     },
@@ -52,35 +59,6 @@ const PopularDestinationSlider = () => {
         },
       },
     ],
-  };
-
-  const getCardClass = (index) => {
-    const position =
-      (index - activeSlide + destinations.length) % destinations.length;
-
-    // Normalize position for wrap-around
-    const normalizedPosition =
-      position > destinations.length / 2
-        ? position - destinations.length
-        : position;
-
-    const baseClass =
-      'absolute transition-all duration-500 ease-in-out rounded-lg overflow-hidden';
-
-    switch (normalizedPosition) {
-      case -2: // Leftmost
-        return `${baseClass} left-[100%] w-[230px] h-[350px] top-[75px] opacity-70 z-10`;
-      case -1: // Left
-        return `${baseClass} left-[50%] w-[280px] h-[400px] top-[50px] opacity-95 z-20`;
-      case 0: // Center
-        return `${baseClass} left-1/2 -translate-x-1/2 w-[370px] h-[500px] top-0 opacity-100 z-30`;
-      case 1: // Right
-        return `${baseClass} right-[50%] w-[280px] h-[400px] top-[50px] opacity-95 z-20`;
-      case 2: // Rightmost
-        return `${baseClass} right-[100%] w-[230px] h-[350px] top-[75px] opacity-70 z-10`;
-      default:
-        return `${baseClass} opacity-0 pointer-events-none`;
-    }
   };
 
   return (
@@ -117,34 +95,76 @@ const PopularDestinationSlider = () => {
         </Slider>
       </div> */}
 
-      <div className="w-full h-full lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl mx-auto">
-        <Slider {...homeSliderSetting} className="my-slider">
+      {/* <div className="w-full h-full mx-auto bg-red">
+        <Slider {...homeSliderSetting} className="my-slider py-[100px]">
           {destinations?.map((slider, index) => (
-            <div
-              className="grid grid-cols-3 items-center content-center"
+            <Link
               key={index}
+              href="#"
+              className={`block relative h-[350px] sm:h-[400px] rounded-lg overflow-hidden homeSlide transition-all duration-500 ${
+                activeSlide === index ? 'homeActiveSlide' : 'opacity-80'
+              }`}
             >
-              <div className="flex flex-col h-[400px]">
-                <Link
-                  href="#"
-                  className={`homeSlide transition-all duration-500 ${
-                    activeSlide === index ? 'homeActiveSlide' : 'opacity-80'
-                  }`}
-                >
-                  <Image
-                    src={slider.image}
-                    alt="movie"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto rounded-lg overflow-hidden"
-                  />
-                </Link>
-              </div>
-            </div>
+              <Image
+                src={slider.image}
+                alt="movie"
+                fill
+                className="object-cover block "
+              />
+            </Link>
           ))}
         </Slider>
-      </div>
+      </div> */}
+
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={3}
+        initialSlide={1}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 120,
+          modifier: 2.5,
+          slideShadows: false,
+        }}
+        loop={true}
+        loopAdditionalSlides={1}
+        watchSlidesProgress={true}
+        loopedSlides={destinations.length}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+        }}
+        className="destinationSwiper w-full xl:max-w-5xl 3xl:max-w-6xl mx-auto"
+      >
+        {destinations?.map((slider, index) => (
+          <SwiperSlide key={index} className="h-[500px]">
+            <Link
+              href="#"
+              className={`block relative h-[350px] sm:h-[500px] rounded-lg overflow-hidden homeSlide transition-all duration-500`}
+            >
+              <Image
+                src={slider.image}
+                alt="movie"
+                fill
+                className="object-cover block"
+              />
+            </Link>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

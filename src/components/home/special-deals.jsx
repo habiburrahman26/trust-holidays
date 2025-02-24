@@ -66,7 +66,7 @@ const SpecialDeals = () => {
         {destinations.map((destination, index) => (
           <div
             key={index}
-            className="relative h-[168px] rounded-lg shadow-sm overflow-hidden"
+            className="relative px-1 h-[180px] rounded-lg shadow-sm overflow-hidden"
             
           >
             <Image

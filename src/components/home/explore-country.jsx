@@ -52,25 +52,27 @@ const ExploreCountry = () => {
           <Link
             href="#"
             key={index}
-            className="block px-2 relative rounded-xl overflow-hidden"
+            className="block px-1 relative rounded-xl overflow-hidden"
           >
-            <div className="aspect-[3/3] sm:aspect-[4/5] lg:aspect-[4/5]">
+            <div className="relative h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
               <Image
                 src={destination.image}
                 alt={destination.name}
                 fill
                 className="h-full w-full object-cover"
               />
+
+              {/* Gradient Overlay */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    'linear-gradient(180deg, rgba(196, 196, 196, 0.00) 64.47%, #1E1E1E 94.67%)',
+                }}
+              />
             </div>
 
-            {/* Gradient Overlay */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(196, 196, 196, 0.00) 64.47%, #1E1E1E 94.67%)',
-              }}
-            />
+            
 
             {/* Content */}
             <div className="absolute bottom-0 w-full px-2 py-4 lg:p-6">
