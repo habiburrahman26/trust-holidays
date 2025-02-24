@@ -153,6 +153,7 @@ body {
   transform: rotate(-180deg);
 }
 
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -199,6 +200,16 @@ body {
   height: 6px;
   border-radius: 100px;
   background-color: #1e1e1e;
+  margin-right: 5px;
+}
+
+.point-box::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #FD983D;
   margin-right: 5px;
 }
 

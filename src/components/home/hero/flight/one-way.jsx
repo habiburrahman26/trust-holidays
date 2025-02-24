@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import locationChangeIcon from '@/assets/icon/location-change.svg';
-import searchIcon from '@/assets/icon/search.svg';
-import { format } from 'date-fns';
-import { Calendar } from '@/components/ui/calendar';
+import { useState } from "react";
+import Image from "next/image";
+import locationChangeIcon from "@/assets/icon/location-change.svg";
+import searchIcon from "@/assets/icon/search.svg";
+import { format } from "date-fns";
+import { Calendar } from "@/components/ui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
+} from "@/components/ui/popover";
 
 const Oneway = () => {
   const [date, setDate] = useState(new Date());
@@ -55,28 +55,27 @@ const Oneway = () => {
             <p className="text-black text-xs">Journey Date</p>
             <p>
               <span className="text-primary font-medium">
-                {date ? format(date, 'dd') : null}{' '}
+                {date ? format(date, "dd") : null}{" "}
               </span>
               <span className="text-sm">
-                {date ? format(date, 'LLL') : null},{' '}
-                {date ? format(date, 'yy') : null}
+                {date ? format(date, "LLL") : null},{" "}
+                {date ? format(date, "yy") : null}
               </span>
             </p>
 
             <p className="text-black text-xs">
-              {date ? format(date, 'eeee') : null}
+              {date ? format(date, "eeee") : null}
             </p>
-
-            <PopoverContent className="w-auto p-0">
-              <Calendar
-                mode="single"
-                selected={date}
-                onSelect={setDate}
-                initialFocus
-              />
-            </PopoverContent>
           </div>
         </PopoverTrigger>
+        <PopoverContent className="w-auto p-0">
+          <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            initialFocus
+          />
+        </PopoverContent>
       </Popover>
 
       <div className="hero-small-card">

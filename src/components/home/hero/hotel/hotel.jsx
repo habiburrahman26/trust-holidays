@@ -1,37 +1,37 @@
-'use client';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { useState } from 'react';
-import Image from 'next/image';
-import { format, addDays } from 'date-fns';
-import { Calendar } from '@/components/ui/calendar';
-import searchIcon from '@/assets/icon/search.svg';
+"use client";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { useState } from "react";
+import Image from "next/image";
+import { format, addDays } from "date-fns";
+import { Calendar } from "@/components/ui/calendar";
+import searchIcon from "@/assets/icon/search.svg";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
+} from "@/components/ui/popover";
 
 const SEARCHFOR = [
   {
-    label: 'Business',
-    value: 'business',
+    label: "Business",
+    value: "business",
   },
   {
-    label: 'Couples',
-    value: 'couples',
+    label: "Couples",
+    value: "couples",
   },
   {
-    label: 'Families',
-    value: 'families',
+    label: "Families",
+    value: "families",
   },
   {
-    label: 'Friends',
-    value: 'friends',
+    label: "Friends",
+    value: "friends",
   },
   {
-    label: 'Solo',
-    value: 'solo',
+    label: "Solo",
+    value: "solo",
   },
 ];
 
@@ -57,16 +57,16 @@ export const Hotel = () => {
                 id={item.value}
                 className={`shadow-none ${
                   selectedSearch === item.value
-                    ? 'border-primary'
-                    : ' border-darkGray2'
+                    ? "border-primary"
+                    : " border-darkGray2"
                 }`}
               />
               <Label
                 htmlFor={item.value}
                 className={`${
                   selectedSearch === item.value
-                    ? 'text-primary'
-                    : 'text-darkGray2'
+                    ? "text-primary"
+                    : "text-darkGray2"
                 } text-sm`}
               >
                 {item.label}
@@ -94,28 +94,27 @@ export const Hotel = () => {
                 <p className="text-black text-xs">Check In</p>
                 <p>
                   <span className="text-primary font-medium">
-                    {checkIn ? format(checkIn, 'dd') : null}{' '}
+                    {checkIn ? format(checkIn, "dd") : null}{" "}
                   </span>
                   <span className="text-sm">
-                    {checkIn ? format(checkIn, 'LLL') : null},{' '}
-                    {checkIn ? format(checkIn, 'yy') : null}
+                    {checkIn ? format(checkIn, "LLL") : null},{" "}
+                    {checkIn ? format(checkIn, "yy") : null}
                   </span>
                 </p>
 
                 <p className="text-black text-xs">
-                  {checkIn ? format(checkIn, 'eeee') : null}
+                  {checkIn ? format(checkIn, "eeee") : null}
                 </p>
-
-                <PopoverContent className="w-auto p-0">
-                  <Calendar
-                    mode="single"
-                    selected={checkIn}
-                    onSelect={setCheckIn}
-                    initialFocus
-                  />
-                </PopoverContent>
               </div>
             </PopoverTrigger>
+            <PopoverContent className="w-auto p-0">
+              <Calendar
+                mode="single"
+                selected={checkIn}
+                onSelect={setCheckIn}
+                initialFocus
+              />
+            </PopoverContent>
           </Popover>
         </div>
 
@@ -125,34 +124,33 @@ export const Hotel = () => {
               <p className="text-black text-xs">Check Out</p>
               <p>
                 <span className="text-primary font-medium">
-                  {checkOut ? format(checkOut, 'dd') : null}{' '}
+                  {checkOut ? format(checkOut, "dd") : null}{" "}
                 </span>
                 <span className="text-sm">
-                  {checkOut ? format(checkOut, 'LLL') : null},{' '}
-                  {checkOut ? format(checkOut, 'yy') : null}
+                  {checkOut ? format(checkOut, "LLL") : null},{" "}
+                  {checkOut ? format(checkOut, "yy") : null}
                 </span>
               </p>
 
               <p className="text-black text-xs">
-                {checkOut ? format(checkOut, 'eeee') : null}
+                {checkOut ? format(checkOut, "eeee") : null}
               </p>
-
-              <PopoverContent className="w-auto p-0">
-                <Calendar
-                  mode="single"
-                  selected={checkOut}
-                  onSelect={setCheckOut}
-                  initialFocus
-                />
-              </PopoverContent>
             </div>
           </PopoverTrigger>
+          <PopoverContent className="w-auto p-0">
+            <Calendar
+              mode="single"
+              selected={checkOut}
+              onSelect={setCheckOut}
+              initialFocus
+            />
+          </PopoverContent>
         </Popover>
 
         <div className="hero-small-card">
           <p className="text-black text-xs">Room & Guests</p>
           <h3 className="text-sm">
-            <span className="text-primary font-medium text-base">1</span> room,{' '}
+            <span className="text-primary font-medium text-base">1</span> room,{" "}
             <span className="text-primary font-medium text-base">2</span> guest
           </h3>
           {/* <input

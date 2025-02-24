@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import { format, addDays } from 'date-fns';
-import { Calendar } from '@/components/ui/calendar';
-import searchIcon from '@/assets/icon/search.svg';
+import { useState } from "react";
+import Image from "next/image";
+import { format, addDays } from "date-fns";
+import { Calendar } from "@/components/ui/calendar";
+import searchIcon from "@/assets/icon/search.svg";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
+} from "@/components/ui/popover";
 
 const AddDestination = () => {
   const [date, setDate] = useState(new Date());
@@ -29,24 +29,23 @@ const AddDestination = () => {
             <div className="hero-small-card flex flex-col justify-center cursor-pointer">
               <p>
                 <span className="text-primary font-medium">
-                  {date ? format(date, 'dd LLLL') : null}{' '}
+                  {date ? format(date, "dd LLLL") : null}{" "}
                 </span>
               </p>
 
               <p className="text-black text-xs">
-                {date ? format(date, 'eeee, yyyy') : null}
+                {date ? format(date, "eeee, yyyy") : null}
               </p>
-
-              <PopoverContent className="w-auto p-0">
-                <Calendar
-                  mode="single"
-                  selected={date}
-                  onSelect={setDate}
-                  initialFocus
-                />
-              </PopoverContent>
             </div>
           </PopoverTrigger>
+          <PopoverContent className="w-auto p-0">
+            <Calendar
+              mode="single"
+              selected={date}
+              onSelect={setDate}
+              initialFocus
+            />
+          </PopoverContent>
         </Popover>
       </div>
 
