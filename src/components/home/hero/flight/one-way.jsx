@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import Link from "next/link";
 
 const Oneway = () => {
   const [date, setDate] = useState(new Date());
@@ -88,9 +89,9 @@ const Oneway = () => {
         <p className="truncate text-black text-xs">Economy Class</p>
       </div>
 
-      <div className="w-[81px] h-[77px] bg-primary flex items-center justify-center p-6 rounded-lg">
+      <Link href="flight-search" className="w-[81px] h-[77px] bg-primary flex items-center justify-center p-6 rounded-lg">
         <Image src={searchIcon} alt="search icon" className="size-8" />
-      </div>
+      </Link>
     </div>
   );
 };

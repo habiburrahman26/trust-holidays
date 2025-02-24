@@ -92,7 +92,7 @@ const page = () => {
                 }`}
               >
                 <p>Cheapest</p>
-                <p>10,819</p>
+                <p className={`${activeTab === "cheapest" ? "text-white" : "text-black/50"}`}>10,819</p>
               </TabsTrigger>
               <TabsTrigger
                 value="earliest"
@@ -103,7 +103,7 @@ const page = () => {
                 }`}
               >
                 <p>Earliest</p>
-                <p className="text-black/50">07:15 AM</p>
+                <p className={`${activeTab === "earliest" ? "text-white" : "text-black/50"}`}>07:15 AM</p>
               </TabsTrigger>
               <TabsTrigger
                 value="fastest"
@@ -114,7 +114,7 @@ const page = () => {
                 }`}
               >
                 <p>Fastest</p>
-                <p className="text-black/50">2 Hr 5 Min</p>
+                <p className={`${activeTab === "fastest" ? "text-white" : "text-black/50"}`}>2 Hr 5 Min</p>
               </TabsTrigger>
             </TabsList>
           </Tabs>
