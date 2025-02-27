@@ -12,7 +12,7 @@ const TourPackage = () => {
         <Filter />
         <div className="col-span-9">
           <div>
-            <div className="grid grid-cols-3 3xl:grid-cols-4 gap-3.5 3xl:gap-5">
+            <div className="grid grid-cols-3 5xl:grid-cols-4 gap-3.5 3xl:gap-5">
               {CARD_DATA.map((item) => (
                 <TourCard {...item} />
               ))}

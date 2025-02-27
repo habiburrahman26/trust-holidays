@@ -62,7 +62,7 @@ const tabs = [
 const HeroTabs = () => {
   const [activeTab, setActiveTab] = useState('flight');
   return (
-    <div className="bg-white rounded-lg max-w-5xl 3xl:max-w-6xl 4xl:max-w-7xl mx-auto shadow z-10">
+    <div className="bg-white rounded-lg max-w-5xl 3xl:max-w-6xl 5xl:max-w-7xl mx-auto shadow z-10">
       <Tabs
         defaultValue="flight"
         value={activeTab}

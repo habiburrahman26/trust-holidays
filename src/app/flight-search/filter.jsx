@@ -100,6 +100,7 @@ const Filter = () => {
           {airlines.map((item) => (
             <CheckboxItem
               {...item}
+              key={item.value}
               selectItems={selectAirlines}
               setSelectItems={setSelectAirlines}
             />
@@ -133,6 +134,7 @@ const Filter = () => {
         <div className="space-y-3.5">
           {flightTypeData.map((item) => (
             <CheckboxItem
+            key={item.value}
               {...item}
               selectItems={flightTypes}
               setSelectItems={setFlightTypes}
@@ -149,6 +151,7 @@ const Filter = () => {
         <div className="space-y-3.5">
           {numberOfStopsData.map((item) => (
             <CheckboxItem
+            key={item.value}
               {...item}
               selectItems={numberOfStops}
               setSelectItems={setNumberOfStops}

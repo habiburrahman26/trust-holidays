@@ -157,7 +157,7 @@ const PopularDestinationSlider = () => {
             >
               <Image
                 src={slider.image}
-                alt="movie"
+                alt="destination image"
                 fill
                 className="object-cover block"
               />

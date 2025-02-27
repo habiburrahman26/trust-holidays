@@ -11,7 +11,8 @@ export default {
     extend: {
       screens: {
         '3xl': '1600px',
-        '4xl': '1900px',
+        '4xl': '1750px',
+        '5xl':'1900px'
       },
       colors: {
         background: {
@@ -56,6 +57,7 @@ export default {
         darkGray2: 'hsl(var(--dark-gray-2))',
         lighterGray2: 'hsl(var(--lighter-gray-2))',
         lightPink: 'hsl(var(--light-pink))',
+        green:'hsl(var(--green))',
 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

@@ -5,6 +5,8 @@ import paperPlane from "@/assets/icon/paper-plane.svg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
+import Airlines from "./airlines";
+import FlightCard from "./flight-card";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState("cheapest");
@@ -73,22 +75,24 @@ const page = () => {
               <p className="font-medium text-black/50 pb-2.5">
                 *Price Includes VAT & Tax{" "}
               </p>
-              <p className="text-3xl font-medium">82 Available Flights</p>
+              <p className="text-2xl 4xl:3xl font-medium">82 Available Flights</p>
             </div>
           </div>
+
+          <Airlines/>
 
           <Tabs
             defaultValue="cheapest"
             value={activeTab}
             onValueChange={setActiveTab}
           >
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-3 p-0 mb-20">
               <TabsTrigger
                 value="cheapest"
-                className={`px-7 py-6 flex justify-between text-black data-[state=active]:shadow-none ${
+                className={`h-[70px] flex justify-between text-black data-[state=active]:shadow-none ${
                   activeTab === "cheapest"
                     ? "data-[state=active]:bg-primary data-[state=active]:text-white"
-                    : "bg-white rounded-none"
+                    : "bg-white rounded-none rounded-tl-md rounded-bl-md"
                 }`}
               >
                 <p>Cheapest</p>
@@ -96,7 +100,7 @@ const page = () => {
               </TabsTrigger>
               <TabsTrigger
                 value="earliest"
-                className={`px-7 py-6 flex justify-between text-black data-[state=active]:shadow-none ${
+                className={`h-[70px] flex justify-between text-black data-[state=active]:shadow-none ${
                   activeTab === "earliest"
                     ? "data-[state=active]:bg-primary data-[state=active]:text-white"
                     : "bg-white rounded-none"
@@ -107,10 +111,10 @@ const page = () => {
               </TabsTrigger>
               <TabsTrigger
                 value="fastest"
-                className={`px-7 py-6 flex justify-between text-black data-[state=active]:shadow-none ${
+                className={`h-[70px] flex justify-between text-black data-[state=active]:shadow-none ${
                   activeTab === "fastest"
                     ? "data-[state=active]:bg-primary data-[state=active]:text-white"
-                    : "bg-white rounded-none"
+                    : "bg-white rounded-none rounded-tr-md rounded-br-md"
                 }`}
               >
                 <p>Fastest</p>
@@ -118,6 +122,14 @@ const page = () => {
               </TabsTrigger>
             </TabsList>
           </Tabs>
+
+          <div className="flex flex-col gap-5">
+          <FlightCard bestDeal/>
+          <FlightCard />
+          <FlightCard yourOffer/>
+          <FlightCard/>
+          <FlightCard/>
+          </div>
         </div>
       </div>
     </section>

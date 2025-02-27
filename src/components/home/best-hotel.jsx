@@ -10,6 +10,7 @@ const BestHotel = () => {
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2F267736179_149939317369872_2872125975221274736_n.jpg&w=1920&q=75',
       reviews: 261,
+      alt:"place",
       rating: 5,
     },
     {
@@ -17,12 +18,14 @@ const BestHotel = () => {
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2FSingapore.jpg&w=1920&q=75',
       reviews: 261,
+      alt:"place",
       rating: 5,
     },
     {
       name: 'Nepal',
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2FMaafushi.jpg&w=1920&q=75',
+        alt:"place",
       reviews: 261,
       rating: 5,
     },
@@ -30,6 +33,7 @@ const BestHotel = () => {
       name: 'Singapore',
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2FKolkata.jpg&w=1920&q=75',
+        alt:"place",
       reviews: 261,
       rating: 5,
     },
@@ -37,6 +41,7 @@ const BestHotel = () => {
       name: 'India',
       image:
         'https://sharetrip.net/_next/image?url=https%3A%2F%2Ftbbd-flight.s3.ap-southeast-1.amazonaws.com%2Fpromotion%2FBangkok.jpg&w=1920&q=75',
+        alt:"place",
       reviews: 261,
       rating: 5,
     },

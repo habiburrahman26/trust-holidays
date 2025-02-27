@@ -5,17 +5,6 @@ import shareIcon from '@/assets/icon/share.svg';
 import reviewStarIcon from '@/assets/icon/review-star.svg';
 import locationIcon from '@/assets/icon/location.svg';
 
-const CARD_DATA = [
-  {
-    name: 'Dazzling Dubai',
-    location: 'Dubai, United Arab Emirates',
-    image:
-      'https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739992292/fc7744005131edfd40385816a3595180_rmb2zj.jpg',
-    days: 3,
-    review: 1000,
-    price: 200,
-  },
-];
 
 const TourCard = ({name,location,image,days,review,price}) => {
   return (
