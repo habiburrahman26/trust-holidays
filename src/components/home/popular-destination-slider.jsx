@@ -133,8 +133,6 @@ const PopularDestinationSlider = () => {
         }}
         loop={true}
         loopAdditionalSlides={1}
-        watchSlidesProgress={true}
-        loopedSlides={destinations.length}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
         autoplay={{
