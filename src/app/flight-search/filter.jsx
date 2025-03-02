@@ -1,18 +1,18 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
 import { airlines, flightTypeData, numberOfStopsData } from "@/data/data";
-import { useState } from "react";
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import FlightSchedule from "./flight-schedule";
 
 const CheckboxItem = ({ label, value, selectItems, setSelectItems }) => {
   return (
@@ -47,6 +47,7 @@ const Filter = () => {
   const [selectAirlines, setSelectAirlines] = useState([]);
   const [flightTypes, setFlightTypes] = useState([]);
   const [numberOfStops, setNumberOfStops] = useState([]);
+
 
   return (
     <div className="col-span-3">
@@ -90,6 +91,7 @@ const Filter = () => {
       </div>
 
       {/* flight schedules */}
+      <FlightSchedule/>
 
       {/* Airlines */}
       <div className="pt-8">
@@ -112,18 +114,18 @@ const Filter = () => {
       <div className="pt-8">
         <p className="font-medium">Number Of Stops</p>
         <div className="my-2.5 h-[1px] w-full bg-darkGray2/50"></div>
-        
-          <Select>
-            <SelectTrigger className="w-full shadow-none h-11">
-              <SelectValue placeholder="Select" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectItem value="non-refundable">Non Refundable</SelectItem>
-                <SelectItem value="refund">Refundable</SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+
+        <Select>
+          <SelectTrigger className="w-full shadow-none h-11">
+            <SelectValue placeholder="Select" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value="non-refundable">Non Refundable</SelectItem>
+              <SelectItem value="refund">Refundable</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Flight type */}
@@ -134,7 +136,7 @@ const Filter = () => {
         <div className="space-y-3.5">
           {flightTypeData.map((item) => (
             <CheckboxItem
-            key={item.value}
+              key={item.value}
               {...item}
               selectItems={flightTypes}
               setSelectItems={setFlightTypes}
@@ -151,7 +153,7 @@ const Filter = () => {
         <div className="space-y-3.5">
           {numberOfStopsData.map((item) => (
             <CheckboxItem
-            key={item.value}
+              key={item.value}
               {...item}
               selectItems={numberOfStops}
               setSelectItems={setNumberOfStops}
@@ -160,22 +162,22 @@ const Filter = () => {
         </div>
       </div>
 
-       {/* baggage Policy */}
-       <div className="pt-8">
+      {/* baggage Policy */}
+      <div className="pt-8">
         <p className="font-medium">Baggage Policy</p>
         <div className="my-2.5 h-[1px] w-full bg-darkGray2/50"></div>
-        
-          <Select>
-            <SelectTrigger className="w-full shadow-none h-11">
-              <SelectValue placeholder="Select" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectItem value="20">20 Kg</SelectItem>
-                <SelectItem value="40">40 Kg</SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
+
+        <Select>
+          <SelectTrigger className="w-full shadow-none h-11">
+            <SelectValue placeholder="Select" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value="20">20 Kg</SelectItem>
+              <SelectItem value="40">40 Kg</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
       </div>
     </div>
   );
