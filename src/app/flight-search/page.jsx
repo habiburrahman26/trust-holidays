@@ -61,7 +61,7 @@ const page = () => {
           </div>
           <p className="text-2xl font-semibold text-black">15:29</p>
         </div>
-        <Button size="lg" className="shadow-none text-white px-6">
+        <Button size="lg" className="h-12 shadow-none text-white px-6">
           Modify Search
         </Button>
       </div>

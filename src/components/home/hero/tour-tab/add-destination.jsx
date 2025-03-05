@@ -8,6 +8,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import Link from "next/link";
 
 const AddDestination = () => {
   const [date, setDate] = useState(new Date());
@@ -49,9 +50,9 @@ const AddDestination = () => {
         </Popover>
       </div>
 
-      <div className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
+      <Link href="tour-package" className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
         <Image src={searchIcon} alt="search icon" className="size-8" />
-      </div>
+      </Link>
     </div>
   );
 };

@@ -4,11 +4,14 @@ import TourCard from './tour-card';
 import { CARD_DATA } from '@/data/data';
 import arrowIcon from '@/assets/icon/arrow.svg';
 import Image from 'next/image';
+import ModifySearch from './modify-search';
 
 const TourPackage = () => {
   return (
-    <section className="px-40 py-24 bg-background-secondary">
-      <div className="grid grid-cols-12 gap-10">
+    <section className="bg-background-secondary">
+      <ModifySearch/>
+
+      <div className="grid grid-cols-12 gap-10 section-container py-10">
         <Filter />
         <div className="col-span-9">
           <div>

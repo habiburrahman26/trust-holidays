@@ -4,11 +4,12 @@ import tourLinkIcon from '@/assets/icon/tour-link.svg';
 import shareIcon from '@/assets/icon/share.svg';
 import reviewStarIcon from '@/assets/icon/review-star.svg';
 import locationIcon from '@/assets/icon/location.svg';
+import Link from 'next/link';
 
 
 const TourCard = ({name,location,image,days,review,price}) => {
   return (
-    <div className="p-2 pb-8 bg-white rounded-lg" style={{boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.08)"}}>
+    <Link href={`tour-package-details?destination=${name.split(' ').join('-')}`} className="p-2 pb-8 bg-white rounded-lg" style={{boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.08)"}}>
       <div className="relative h-[250px] rounded-lg overflow-hidden">
         <Image
           src={image}
@@ -75,7 +76,7 @@ const TourCard = ({name,location,image,days,review,price}) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

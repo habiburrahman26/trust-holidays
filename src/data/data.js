@@ -189,3 +189,51 @@ export const numberOfStopsData = [
   { label: "stop", value: "stop" },
   { label: "Non-stop", value: "non-stop" },
 ];
+
+
+export const tourAccordions = [
+  {
+    label: "Itinerary",
+    value: "itinerary",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`
+  },
+  {
+    label: "Pickup Note",
+    value: "pickup",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`
+  },
+  {
+    label:"Cancellation Policy",
+    value:"cancellation",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  },
+  {
+    label:"Tax",
+    value:"tax",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  },
+  {
+    label:"Included Service",
+    value:"included",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  },{
+    label:"Excluded Service",
+    value:"excluded",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  },
+  {
+    label:"Highlights",
+    value:"highlights",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  },{
+    label:"General Condition",
+    value:"general",
+    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `
+  }
+]
