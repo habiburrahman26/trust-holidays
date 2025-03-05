@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import ModifySearch from "../tour-package/modify-search";
 import drizzel from "@/assets/images/drizzel.jpeg";
@@ -16,16 +16,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { tourAccordions } from "@/data/data";
 import { Button } from "@/components/ui/button";
 
 const page = () => {
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
   const [activeAccordions, setActiveAccordions] = useState([]);
 
-  const destination = searchParams.get("destination");
-  const destinationName = destination.split("-").join(" ");
+  // const destination = searchParams.get("destination");
+  // const destinationName = destination.split("-").join(" ");
 
   return (
     <section className="bg-background-secondary pb-20">
@@ -40,7 +40,9 @@ const page = () => {
           <div className="col-span-3">
             <div className="flex items-center justify-between">
               <div className="space-y-4">
-                <h1 className="text-4xl font-medium">{destinationName}</h1>
+                {/* <Suspense fallback={<p>loading...</p>}> */}
+                <h1 className="text-4xl font-medium">Dazzling Dubai</h1>
+                {/* </Suspense> */}
                 <div className="flex items-center gap-2.5">
                   <Image
                     src={locationIcon}
