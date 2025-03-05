@@ -107,6 +107,42 @@ export const CARD_DATA = [
     review: 1600,
     price: 450,
   },
+  {
+    name: "Dazzling Dubai",
+    location: "Dubai, United Arab Emirates",
+    image:
+      "https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739992292/fc7744005131edfd40385816a3595180_rmb2zj.jpg",
+    days: 3,
+    review: 1000,
+    price: 200,
+  },
+  {
+    name: "Luxury in Dubai",
+    location: "Dubai, United Arab Emirates",
+    image:
+      "https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739992292/26b268ab63ed1147c12edcec45c952b4_hgwinm.jpg",
+    days: 5,
+    review: 1200,
+    price: 350,
+  },
+  {
+    name: "Scenic Dubai",
+    location: "Dubai, United Arab Emirates",
+    image:
+      "https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739992292/7a6a586d99632f3880108dd7926b8bf9_fjb8fp.jpg",
+    days: 4,
+    review: 900,
+    price: 300,
+  },
+  {
+    name: "Desert Adventure",
+    location: "Dubai, United Arab Emirates",
+    image:
+      "https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739992292/06328f562c72c7eb8619eb164ef435e0_ljliu5.jpg",
+    days: 2,
+    review: 800,
+    price: 180,
+  },
 ];
 
 export const destinations = [
@@ -173,67 +209,67 @@ export const airlines = [
   },
 ];
 
-
-export const flightTypeData=[
+export const flightTypeData = [
   {
-    label:"Regular Flight",
-    value:"regular"
+    label: "Regular Flight",
+    value: "regular",
   },
   {
-    label:"Multi Flight",
-    value:"multi"
+    label: "Multi Flight",
+    value: "multi",
   },
-]
+];
 
 export const numberOfStopsData = [
   { label: "stop", value: "stop" },
   { label: "Non-stop", value: "non-stop" },
 ];
 
-
 export const tourAccordions = [
   {
     label: "Itinerary",
     value: "itinerary",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`,
   },
   {
     label: "Pickup Note",
     value: "pickup",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam.`,
   },
   {
-    label:"Cancellation Policy",
-    value:"cancellation",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
+    label: "Cancellation Policy",
+    value: "cancellation",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
   },
   {
-    label:"Tax",
-    value:"tax",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
+    label: "Tax",
+    value: "tax",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
   },
   {
-    label:"Included Service",
-    value:"included",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
-  },{
-    label:"Excluded Service",
-    value:"excluded",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
+    label: "Included Service",
+    value: "included",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
   },
   {
-    label:"Highlights",
-    value:"highlights",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
-  },{
-    label:"General Condition",
-    value:"general",
-    content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
-    `
-  }
-]
+    label: "Excluded Service",
+    value: "excluded",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
+  },
+  {
+    label: "Highlights",
+    value: "highlights",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
+  },
+  {
+    label: "General Condition",
+    value: "general",
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus, eaque rerum beatae saepe tenetur omnis repellendus voluptatibus suscipit aliquam
+    `,
+  },
+];
