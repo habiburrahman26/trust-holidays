@@ -9,7 +9,7 @@ import phoneIcon from "@/assets/icon/phone.svg";
 import locationIcon from "@/assets/icon/location.svg";
 import shareIcon from "@/assets/icon/share.svg";
 import reviewStarIcon from "@/assets/icon/review-star.svg";
-import buildingIcon from '@/assets/icon/building.svg';
+import buildingIcon from "@/assets/icon/building.svg";
 import {
   Accordion,
   AccordionContent,
@@ -19,10 +19,12 @@ import {
 import { Suspense, useState } from "react";
 import { tourAccordions } from "@/data/data";
 import { Button } from "@/components/ui/button";
+import Sidebar from "./Sidebar";
 
 const page = () => {
   // const searchParams = useSearchParams();
   const [activeAccordions, setActiveAccordions] = useState([]);
+  const [open, setOpen] = useState(false);
 
   // const destination = searchParams.get("destination");
   // const destinationName = destination.split("-").join(" ");
@@ -144,7 +146,7 @@ const page = () => {
               </p>
 
               <div className="flex items-center gap-5 pt-8">
-                <Button className="h-12 shadow-none bg-gray hover:bg-gray/90">
+                <Button className="h-12 shadow-none bg-[#5E6175] hover:bg-gray/90">
                   Go to Promotions
                 </Button>
                 <div className="flex items-center gap-1">
@@ -196,7 +198,7 @@ const page = () => {
             <div className="border-2 p-6 rounded-md relative">
               <div className="flex items-center justify-between">
                 <p className="text-xl font-semibold uppercase text-primary">
-                STANDARD
+                  STANDARD
                 </p>
                 <div className="flex items-center gap-3.5">
                   <div className="flex items-center gap-1">
@@ -260,13 +262,23 @@ const page = () => {
               </div>
 
               <div className="flex items-center gap-2.5 pt-4">
-                <Image src={buildingIcon} alt="building icon" className="size-5"/>
-                <p className="text-xs text-black">Citymax Bur Dubai or Similar (Dubai)</p>
+                <Image
+                  src={buildingIcon}
+                  alt="building icon"
+                  className="size-5"
+                />
+                <p className="text-xs text-black">
+                  Citymax Bur Dubai or Similar (Dubai)
+                </p>
               </div>
 
-              <p className="pt-5 text-xs text-black pb-4">*Price includes VAT & Tax</p>
+              <p className="pt-5 text-xs text-black pb-4">
+                *Price includes VAT & Tax
+              </p>
 
-              <button className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white  hover:bg-primary/80 transition-all">Book Now</button>
+              <button onClick={()=>setOpen(true)} className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white  hover:bg-primary/80 transition-all">
+                Book Now
+              </button>
             </div>
 
             <div className="border-2 p-6 rounded-md relative">
@@ -336,19 +348,32 @@ const page = () => {
               </div>
 
               <div className="flex items-center gap-2.5 pt-4">
-                <Image src={buildingIcon} alt="building icon" className="size-5"/>
-                <p className="text-xs text-black">Citymax Bur Dubai or Similar (Dubai)</p>
+                <Image
+                  src={buildingIcon}
+                  alt="building icon"
+                  className="size-5"
+                />
+                <p className="text-xs text-black">
+                  Citymax Bur Dubai or Similar (Dubai)
+                </p>
               </div>
 
-              <p className="pt-5 text-xs text-black pb-4">*Price includes VAT & Tax</p>
+              <p className="pt-5 text-xs text-black pb-4">
+                *Price includes VAT & Tax
+              </p>
 
-              <button className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white  hover:bg-primary/80 transition-all">Book Now</button>
+              <button
+                onClick={() => setOpen(true)}
+                className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white  hover:bg-primary/80 transition-all"
+              >
+                Book Now
+              </button>
             </div>
 
             <div className="border-2 p-6 rounded-md relative">
               <div className="flex items-center justify-between">
                 <p className="text-xl font-semibold uppercase text-primary">
-                DELUXE
+                  DELUXE
                 </p>
                 <div className="flex items-center gap-3.5">
                   <div className="flex items-center gap-1">
@@ -412,17 +437,31 @@ const page = () => {
               </div>
 
               <div className="flex items-center gap-2.5 pt-4">
-                <Image src={buildingIcon} alt="building icon" className="size-5"/>
-                <p className="text-xs text-black">Citymax Bur Dubai or Similar (Dubai)</p>
+                <Image
+                  src={buildingIcon}
+                  alt="building icon"
+                  className="size-5"
+                />
+                <p className="text-xs text-black">
+                  Citymax Bur Dubai or Similar (Dubai)
+                </p>
               </div>
 
-              <p className="pt-5 text-xs text-black pb-4">*Price includes VAT & Tax</p>
+              <p className="pt-5 text-xs text-black pb-4">
+                *Price includes VAT & Tax
+              </p>
 
-              <button className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white hover:bg-primary/80 transition-all">Book Now</button>
+              <button
+                onClick={() => setOpen(true)}
+                className="absolute left-0 -bottom-8 block w-full bg-primary py-3.5 rounded-md text-white hover:bg-primary/80 transition-all"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <Sidebar open={open} setOpen={setOpen} />
     </section>
   );
 };

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import AppDownload from './app-download';
-import companyLogo from '@/assets/icon/company-logo.svg';
+import companyLogo from '@/assets/icon/trust-logo.svg';
 import notificationIcon from '@/assets/icon/notification.svg';
 import bdIcon from '@/assets/icon/country/bd.svg';
 import arrowIcon from '@/assets/icon/arrow.svg';
@@ -14,8 +14,7 @@ const Navbar = () => {
       <div className='bg-background-secondary section-container'>
         <nav className="h-[70px] flex items-center justify-between">
             <Link href="/" className='flex items-center gap-3 sm:gap-5 md:gap-7'>
-                <Image src={companyLogo} alt="Company Logo" className="size-5 md:size-6 lg:size-8"/>
-                <h3 className='text-xl sm:text-2xl lg:text-3xl font-medium'>Trust <span className='text-primary'>Holi</span>days</h3>
+                <Image src={companyLogo} alt="Company Logo" className="size-48 md:size-56 4xl:size-64"/>
             </Link>
 
             <div className='flex items-center gap-7'>

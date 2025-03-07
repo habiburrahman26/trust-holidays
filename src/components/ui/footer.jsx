@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import mapPinIcon from '@/assets/icon/map-pin.svg';
-import playSoreIcon from '@/assets/icon/play-store.svg';
-import bkash from '@/assets/icon/bkash.svg';
-import nagad from '@/assets/icon/nagod.svg';
-import visa from '@/assets/icon/visa.svg';
-import masterCard from '@/assets/icon/master-card.svg';
-
+import Image from "next/image";
+import Link from "next/link";
+import mapPinIcon from "@/assets/icon/map-pin.svg";
+import playSoreIcon from "@/assets/icon/play-store.svg";
+import bkash from "@/assets/icon/bkash.svg";
+import nagad from "@/assets/icon/nagod.svg";
+import visa from "@/assets/icon/visa.svg";
+import masterCard from "@/assets/icon/master-card.svg";
+import companyLogo from "@/assets/icon/trust-logo.svg";
 const Footer = () => {
   return (
     <footer>
@@ -18,9 +18,17 @@ const Footer = () => {
             {/* Company Info */}
             <div className="sm:col-span-2 md:col-span-4 lg:col-span-2">
               <div className="space-y-6">
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium">
-                  Trust <span className="text-orange-500">Holi</span>days
-                </h2>
+                <Link
+                  href="/"
+                  className="flex items-center gap-3 sm:gap-5 md:gap-7 relative w-48 md:w-56 4xl:w-64 h-10"
+                >
+                  <Image
+                    src={companyLogo}
+                    alt="Company Logo"
+                    fill
+                    className="object-contain w-full h-full"
+                  />
+                </Link>
                 <p className="max-w-md text-black/50 text-sm">
                   Since our inception, we have dreamt of making travel easier
                   for people of all ages and we move forward to make that dream
@@ -45,7 +53,7 @@ const Footer = () => {
                 SERVICES
               </h3>
               <ul className="space-y-1.5 md:space-y-2.5">
-                {['Flight', 'Hotel', 'Holiday', 'Visa'].map((item) => (
+                {["Flight", "Hotel", "Holiday", "Visa"].map((item) => (
                   <li key={item}>
                     <Link
                       href="#"
@@ -65,10 +73,10 @@ const Footer = () => {
               </h3>
               <ul className="space-y-1.5 md:space-y-2.5">
                 {[
-                  'Travel Guide',
-                  'Travel Advisory',
-                  'Visa Guide',
-                  'Visa Application',
+                  "Travel Guide",
+                  "Travel Advisory",
+                  "Visa Guide",
+                  "Visa Application",
                 ].map((item) => (
                   <li key={item}>
                     <Link
@@ -89,10 +97,10 @@ const Footer = () => {
               </h3>
               <ul className="space-y-1.5 md:space-y-2.5">
                 {[
-                  'Travel Guide',
-                  'Travel Advisory',
-                  'Visa Guide',
-                  'Visa Application',
+                  "Travel Guide",
+                  "Travel Advisory",
+                  "Visa Guide",
+                  "Visa Application",
                 ].map((item) => (
                   <li key={item}>
                     <Link
@@ -115,7 +123,7 @@ const Footer = () => {
                 <li>
                   <div className="flex items-center gap-2 text-sm">
                     <span className="text-black/50">
-                      Hot Line:{' '}
+                      Hot Line:{" "}
                       <Link href="tel:+88018000000" className="text-orange-500">
                         +88018000000
                       </Link>
@@ -126,7 +134,7 @@ const Footer = () => {
                   <div className="flex items-center gap-2 text-sm">
                     {/* <Mail className="w-4 h-4 text-gray-600" /> */}
                     <span className="text-black/50">
-                      Email:{' '}
+                      Email:{" "}
                       <Link
                         href="mailto:info@gmail.com"
                         className="text-orange-500"
@@ -155,7 +163,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='section-container'>
+      <div className="section-container">
         <div className="py-7 flex flex-col items-center justify-center gap-6">
           <p className="font-semibold text-black">We Accept</p>
 
@@ -189,7 +197,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="pt-3 sm:pt-6">
-            Copyright ©{new Date().getFullYear()} Trust{' '}
+            Copyright ©{new Date().getFullYear()} Trust{" "}
             <span className="text-primary">Hoil</span>days. All Rights Reserved.
           </p>
         </div>
