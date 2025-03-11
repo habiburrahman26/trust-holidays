@@ -2,7 +2,7 @@
 
 // import { useSearchParams } from "next/navigation";
 import Image from "next/image";
-import ModifySearch from "../tour-package/modify-search";
+import ModifySearch from "../modify-search";
 import drizzel from "@/assets/images/drizzel.jpeg";
 import calendarIcon from "@/assets/icon/calendar.svg";
 import phoneIcon from "@/assets/icon/phone.svg";

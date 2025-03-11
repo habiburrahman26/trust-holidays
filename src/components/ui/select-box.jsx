@@ -12,7 +12,7 @@ const SelectBox = ({ data, placeholder = "Select", className }) => {
   return (
     <Select>
       <SelectTrigger className={cn("w-full shadow-none", className)}>
-        <SelectValue placeholder={placeholder} />
+        <SelectValue placeholder={placeholder} className="text-gray-400"/>
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

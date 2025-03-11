@@ -7,6 +7,7 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog";
   import { Button } from "./button";
+import Link from "next/link";
   
   const LoginModal = ({ show, setShow }) => {
     return (
@@ -30,7 +31,10 @@ import {
           </div>
   
           <div className="z-10 space-x-7 pt-6">
-            <Button className="h-12 shadow-none px-14">Login</Button>
+            <Button  className="h-12 shadow-none px-14">
+              {/* href="/tour-package/payment" */}
+              <Link href="#">Login</Link>
+            </Button>
             <Button 
               onClick={() => setShow(false)}
               className="h-12 shadow-none px-14 bg-gray/70 hover:bg-gray/80"

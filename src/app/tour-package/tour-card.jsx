@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const TourCard = ({name,location,image,days,review,price}) => {
   return (
-    <Link href={`tour-package-details?destination=${name.split(' ').join('-')}`} className="p-2 pb-8 bg-white rounded-lg" style={{boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.08)"}}>
+    <Link href={`tour-package/details?destination=${name.split(' ').join('-')}`} className="p-2 pb-8 bg-white rounded-lg" style={{boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.08)"}}>
       <div className="relative h-[250px] rounded-lg overflow-hidden">
         <Image
           src={image}
