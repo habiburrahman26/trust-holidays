@@ -142,6 +142,25 @@ body {
   transform: rotate(-180deg);
 }
 
+.payment-content::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    359.37deg,
+    #e0e1e1 -0.32%,
+    #b9b9ba 49.87%,
+    #d4d4d5 100.06%
+  );
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
 .tour-content::after {
   content: '';
   position: absolute;

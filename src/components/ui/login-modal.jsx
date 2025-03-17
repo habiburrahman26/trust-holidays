@@ -33,7 +33,7 @@ import Link from "next/link";
           <div className="z-10 space-x-7 pt-6">
             <Button  className="h-12 shadow-none px-14">
               {/* href="/tour-package/payment" */}
-              <Link href="#">Login</Link>
+              <Link href="/tour-package/payment">Login</Link>
             </Button>
             <Button 
               onClick={() => setShow(false)}
