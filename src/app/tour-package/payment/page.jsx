@@ -5,7 +5,7 @@ import cuponeIcon from "@/assets/icon/cuponeIcon.svg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
-import PaymentMethod from "./paymentMethod";
+import PaymentMethod from "../../../components/ui/paymentMethod";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import tickIcon from "@/assets/icon/tickIcon.svg";

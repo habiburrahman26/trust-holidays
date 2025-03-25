@@ -11,6 +11,7 @@ import reviewStarIcon from "@/assets/icon/review-star.svg";
 import bestDealIcon from "@/assets/icon/flight/best-deal.svg";
 import yourOfferIcon from "@/assets/icon/flight/your-offer.svg";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 const FlightCard = ({ bestDeal, yourOffer }) => {
   return (
@@ -140,9 +141,9 @@ const FlightCard = ({ bestDeal, yourOffer }) => {
               ৳ 10,118
             </p>
           </div>
-          <button className="bg-primary flex justify-center items-center h-[174px] w-[81px] rounded-md">
+          <Link href="flight-booking" className="bg-primary flex justify-center items-center h-[174px] w-[81px] rounded-md">
             <Image src={tickIcon} alt="tick mark icon" className="size-9" />
-          </button>
+          </Link>
         </div>
 
         {(bestDeal || yourOffer) && (

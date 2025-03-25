@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Filter from "./filter";
 import paperPlane from "@/assets/icon/paper-plane.svg";
 import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import Airlines from "./airlines";
 import FlightCard from "./flight-card";

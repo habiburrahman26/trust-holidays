@@ -2,155 +2,159 @@ export const flightRouteData = {
   domestic: [
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Cox’s Bazar',
-        airport: 'Cox’s Bazar Airport',
+        destination: "Cox’s Bazar",
+        airport: "Cox’s Bazar Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Jashore',
-        airport: 'Jashore Airport',
+        destination: "Jashore",
+        airport: "Jashore Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Chattogram',
-        airport: 'Shah Amanat Airport',
+        destination: "Chattogram",
+        airport: "Shah Amanat Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Shylhet',
-        airport: 'Osmany International Airport',
+        destination: "Shylhet",
+        airport: "Osmany International Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Saidpur',
-        airport: 'Saidpur Airport',
+        destination: "Saidpur",
+        airport: "Saidpur Airport",
       },
     },
     {
       from: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       to: {
-        destination: 'Cox’s Bazar',
-        airport: 'Cox’s Bazar Airport',
+        destination: "Cox’s Bazar",
+        airport: "Cox’s Bazar Airport",
       },
     },
     {
       from: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       to: {
-        destination: 'Jashore',
-        airport: 'Jashore Airport',
+        destination: "Jashore",
+        airport: "Jashore Airport",
       },
     },
   ],
   international: [
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Bangkok',
-        airport: 'Suvarnabhumi Airport',
+        destination: "Bangkok",
+        airport: "Suvarnabhumi Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Singapore',
-        airport: 'Changi Airport',
+        destination: "Singapore",
+        airport: "Changi Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Dubai',
-        airport: 'Dubai International Airport',
+        destination: "Dubai",
+        airport: "Dubai International Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Kolkata',
-        airport: 'Netaji Subhas Chandra Bose International Airport',
+        destination: "Kolkata",
+        airport: "Netaji Subhas Chandra Bose International Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'Kolkata',
-        airport: 'Netaji Subhas Chandra Bose International Airport',
+        destination: "Kolkata",
+        airport: "Netaji Subhas Chandra Bose International Airport",
       },
     },
     {
       from: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       to: {
-        destination: 'Kolkata',
-        airport: 'Netaji Subhas Chandra Bose International Airport',
+        destination: "Kolkata",
+        airport: "Netaji Subhas Chandra Bose International Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'New York',
-        airport: 'John F. Kennedy International Airport',
+        destination: "New York",
+        airport: "John F. Kennedy International Airport",
       },
     },
     {
       to: {
-        destination: 'Dhaka',
-        airport: 'Hazrat Shahjalal International Airport',
+        destination: "Dhaka",
+        airport: "Hazrat Shahjalal International Airport",
       },
       from: {
-        destination: 'London',
-        airport: 'Heathrow Airport',
+        destination: "London",
+        airport: "Heathrow Airport",
       },
     },
   ],
 };
+
+export const bankCoupon = [
+  { id: 1, coupon: "AMEXCARD25", description: "Exclusive for GPStar Customers!" },
+];
