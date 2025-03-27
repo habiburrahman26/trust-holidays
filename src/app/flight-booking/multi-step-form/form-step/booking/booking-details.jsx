@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import BookingPayment from "./booking-payment";
 import TravlerDetails from "./travler-details";
+import BookingPaymentDetails from "./booking-payment-details";
 
 const TabButton = (props) => {
   const { title, number, activeTab, onClick } = props;
@@ -11,14 +12,14 @@ const TabButton = (props) => {
     <div
       onClick={onClick}
       className={cn(
-        "flex px-6 py-3 items-center justify-center rounded text-sm font-medium cursor-pointer bg-[#F1F1F4]",
+        "flex px-6 py-3 items-center justify-start rounded text-sm font-medium cursor-pointer bg-[#F1F1F4]",
         {
           "bg-[#FFEDDD]": activeTab == number,
         }
       )}
     >
       <p
-        className={`px-2 flex items-start justify-center rounded-[2px] mr-4 text-white ${
+        className={`px-2 flex items-start justify-start rounded-[2px] mr-4 text-white ${
           activeTab == number ? "bg-primary " : "bg-lightGray"
         }`}
       >
@@ -37,8 +38,8 @@ const BookingDetails = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <div className="grid grid-cols-5 gap-16 pb-20">
-      <div>
+    <div className="grid grid-cols-7 gap-16 pb-20">
+      <div className="col-span-2">
         <h3 className="text-2xl font-medium">Booking Details</h3>
         <Steper />
 
@@ -58,8 +59,9 @@ const BookingDetails = () => {
         </div>
       </div>
 
-      {activeTab === 1 ? <BookingPayment /> :  <TravlerDetails />}
-      <div></div>
+      {activeTab === 1 ? <BookingPayment /> : <TravlerDetails />}
+
+      <BookingPaymentDetails/>
     </div>
   );
 };

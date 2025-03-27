@@ -7,6 +7,7 @@ import { useState } from "react";
 import PaymentMethod from "@/components/ui/paymentMethod";
 import CouponTab from "./couponTab";
 import Trip from "./trip";
+import { Button } from "@/components/ui/button";
 
 const BookingPayment = () => {
   const [activeTab, setActiveTab] = useState("coupon");
@@ -16,7 +17,7 @@ const BookingPayment = () => {
     <div className="col-span-3">
       <h3 className="text-2xl font-medium pb-6">Choose Your Payment Option</h3>
 
-      <div className="bg-white p-6 rounded-lg">
+      <div className="bg-white p-6 rounded-lg max-h-[70vh] overflow-auto">
         <div className="flex items-center gap-2 pb-7">
           <div
             onClick={() => setActiveTab("coupon")}
@@ -127,6 +128,10 @@ const BookingPayment = () => {
           setPaymentMethod={setPaymentMethod}
         />
       </div>
+
+      <div className="px-6 py-5  bg-white">
+          <Button className="h-14 w-full">Proceed to Traveler Details</Button>
+        </div>
     </div>
   );
 };
