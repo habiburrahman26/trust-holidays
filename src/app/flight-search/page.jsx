@@ -20,18 +20,18 @@ const page = () => {
           </p>
           <div className="text-xs text-black/50 flex items-center gap-3">
             <p>Round Trip</p>
-            <p className="flex items-center gap-[5px]">
+            <div className="flex items-center gap-[5px]">
               <div className="size-1 bg-primary rounded-[1px]"></div>
               <span>21 Feb - 23 Feb</span>
-            </p>
-            <p className="flex items-center gap-[5px]">
+            </div>
+            <div className="flex items-center gap-[5px]">
               <div className="size-1 bg-primary rounded-[1px]"></div>
               <span>1 Traveler</span>
-            </p>
-            <p className="flex items-center gap-[5px]">
+            </div>
+            <div className="flex items-center gap-[5px]">
               <div className="size-1 bg-primary rounded-[1px]"></div>
               <span>Economy</span>
-            </p>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-5">

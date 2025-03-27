@@ -50,6 +50,8 @@ const Card = ({  schedules, activeItem, setActiveItem}) => {
                       ? item.activeIcon
                       : item.inactiveIcon
                   }
+
+                  alt="flight schedule icon"
                 />
 
                 <p
