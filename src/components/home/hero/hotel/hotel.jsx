@@ -161,7 +161,7 @@ export const Hotel = () => {
           <p className="truncate text-black text-xs">2 Adults</p>
         </div>
 
-        <Link href="#" className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
+        <Link href="/hotel-search" className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
           <Image src={searchIcon} alt="search icon" className="size-8" />
         </Link>
       </div>
