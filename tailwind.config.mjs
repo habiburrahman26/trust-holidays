@@ -12,7 +12,8 @@ export default {
   		screens: {
   			'3xl': '1600px',
   			'4xl': '1750px',
-  			'5xl': '1900px'
+  			'5xl': '1900px',
+				'6xl': '2100px',
   		},
   		colors: {
   			background: {

@@ -124,8 +124,8 @@ const Footer = () => {
                   <div className="flex items-center gap-2 text-sm">
                     <span className="text-black/50">
                       Hot Line:{" "}
-                      <Link href="tel:+88018000000" className="text-orange-500">
-                        +88018000000
+                      <Link href="tel:+8801332541105" className="text-orange-500">
+                        +8801332541105
                       </Link>
                     </span>
                   </div>
@@ -136,10 +136,10 @@ const Footer = () => {
                     <span className="text-black/50">
                       Email:{" "}
                       <Link
-                        href="mailto:info@gmail.com"
+                        href="mailto:info@trustholidays.net"
                         className="text-orange-500"
                       >
-                        info@gmail.com
+                        info@trustholidays.net
                       </Link>
                     </span>
                   </div>

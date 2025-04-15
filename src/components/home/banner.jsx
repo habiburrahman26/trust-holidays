@@ -1,20 +1,12 @@
-import bannerImg from '@/assets/images/banner-bg.png';
+import bannerImg from '@/assets/images/banner.png';
 import bannerIcon from '@/assets/icon/banner.svg';
 import playStoreIcon from '@/assets/icon/play-store-black.svg';
 import Image from 'next/image';
 
 const Banner = () => {
   return (
-    <section className="relative h-[350px] lg:h-[700px] bg-white flex items-center justify-center overflow-hidden">
-      <div className="absolute left-1/2 lg:left-[40%]  w-1/2 h-[300px] lg:h-[600px] z-10">
-        <Image src={bannerImg} alt="banner" fill objectFit="cover" />
-      </div>
-
-      <div className="absolute top-32 hidden lg:block lg:-right-20 2xl:right-0">
-        <Image src={bannerIcon} alt="banner" />
-      </div>
-
-      <div className="w-full md:w-[600px] absolute top-1/2 -translate-y-1/2 left-2.5 lg:left-[10%] pr-2.5 md:pr-0 z-10">
+    <section className="relative  py-20 flex items-center justify-center">
+      <div className="w-full pl-2.5 sm:pl-4 2xl:pl-[350px] basis-1/2">
         <h3 className="text-2xl md:text-3xl lg:text-4xl text-primary font-medium pb-3.5">
           Get the Trust Holiday's App
         </h3>
@@ -26,6 +18,10 @@ const Banner = () => {
         </p>
 
         <Image src={playStoreIcon} alt="play store icon" className="w-44" />
+      </div>
+
+      <div className="relative w-[35%] lg:w-[50%] xl:w-[40%] 6xl:w-[30%] h-[300px] lg:h-[600px] ml-auto">
+        <Image src={bannerImg} alt="banner" fill objectFit="cover" className='z-10' />
       </div>
     </section>
   );
