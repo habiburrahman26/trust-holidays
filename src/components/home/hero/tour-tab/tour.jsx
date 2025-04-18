@@ -35,13 +35,13 @@ const Tour = () => {
     <div>
       <AddDestination />
 
-      <div className="flex items-center gap-5 pt-7">
+      <div className="flex items-center flex-wrap gap-2 sm:gap-5 pt-7">
         <p className="text-sm font-medium">Search For</p>
 
         <RadioGroup
           defaultValue={selectedSearch}
           onValueChange={(value) => setSelectedSearch(value)}
-          className="flex items-center gap-3.5"
+          className="flex items-center flex-wrap gap-3.5"
         >
           {SEARCHFOR.map((item) => (
             <div className="flex items-center space-x-2">
@@ -69,7 +69,7 @@ const Tour = () => {
         </RadioGroup>
       </div>
 
-      <div className="grid grid-cols-6 gap-3 pt-7">
+      <div className="grid grid-cols-2 sm:grid-cols-6 gap-3 pt-7">
         {/* https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739970917/Bhutan_-_260360_sgeokk.png */}
         {[1,1,1,1,1].map((item, i) => (
           <Link

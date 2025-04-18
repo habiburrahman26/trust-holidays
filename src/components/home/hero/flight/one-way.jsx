@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import locationChangeIcon from "@/assets/icon/location-change.svg";
-import searchIcon from "@/assets/icon/search.svg";
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -9,14 +8,14 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Link from "next/link";
+import SearchIcon from "../searchIcon";
 
 const Oneway = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="pt-6 grid grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
-      <div className="relative w-full grid grid-cols-2 items-center gap-4">
+    <div className="pt-6 grid grid-cols-1 sm:grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
+      <div className="relative w-full grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
         <div className="hero-small-card">
           <p className="text-black text-xs">From</p>
           <h3 className="text-primary font-medium">Dhaka</h3>
@@ -89,9 +88,7 @@ const Oneway = () => {
         <p className="truncate text-black text-xs">Economy Class</p>
       </div>
 
-      <Link href="flight-search" className="w-[81px] h-[77px] bg-primary flex items-center justify-center p-6 rounded-lg">
-        <Image src={searchIcon} alt="search icon" className="size-8" />
-      </Link>
+      <SearchIcon link="flight-search" searchText="Search Flight"/>
     </div>
   );
 };

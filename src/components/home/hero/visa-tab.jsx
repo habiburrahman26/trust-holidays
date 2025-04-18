@@ -6,9 +6,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import Image from 'next/image';
-import searchIcon from '@/assets/icon/search.svg';
 import { useState } from 'react';
+import SearchIcon from './searchIcon';
 
 const VisaTab = () => {
   const [citizen, setCitizen] = useState('bd');
@@ -16,9 +15,9 @@ const VisaTab = () => {
   const [visaCategory, setVisaCategory] = useState('student-visa');
 
   return (
-    <div className="flex items-end gap-3">
-      <div className="grid grid-cols-3 gap-4 w-full">
-        <div className="space-y-3.5 w-full">
+    <div className="flex flex-col sm:flex-row items-end gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
+        <div className="space-y-1 sm:space-y-3.5 w-full">
           <label
             htmlFor="citizen"
             className="text-xs text-black font-medium before-label-dot"
@@ -26,7 +25,7 @@ const VisaTab = () => {
             I’m a Citizen of
           </label>
           <Select value={citizen} onValueChange={setCitizen}>
-            <SelectTrigger className="w-full h-[77px] text-lg shadow-none">
+            <SelectTrigger className="w-full h-14 sm:h-[77px] text-lg shadow-none">
               <SelectValue placeholder="Select your country" />
             </SelectTrigger>
             <SelectContent>
@@ -41,7 +40,7 @@ const VisaTab = () => {
           </Select>
         </div>
 
-        <div className="space-y-3.5 w-full">
+        <div className="space-y-1 sm:space-y-3.5 w-full">
           <label
             htmlFor="citizen"
             className="text-xs text-black font-medium before-label-dot"
@@ -49,7 +48,7 @@ const VisaTab = () => {
             Traveling to
           </label>
           <Select value={travel} onValueChange={setTravel}>
-            <SelectTrigger className="w-full h-[77px] text-lg shadow-none">
+            <SelectTrigger className="w-full h-14 sm:h-[77px] text-lg shadow-none">
               <SelectValue placeholder="Select your country" />
             </SelectTrigger>
             <SelectContent>
@@ -64,7 +63,7 @@ const VisaTab = () => {
           </Select>
         </div>
 
-        <div className="space-y-3.5 w-full">
+        <div className="space-y-1 sm:space-y-3.5 w-full">
           <label
             htmlFor="citizen"
             className="text-xs text-black font-medium before-label-dot"
@@ -72,7 +71,7 @@ const VisaTab = () => {
             Visa Category
           </label>
           <Select value={visaCategory} onValueChange={setVisaCategory}>
-            <SelectTrigger className="w-full h-[77px] shadow-none text-lg">
+            <SelectTrigger className="w-full h-14 sm:h-[77px] shadow-none text-lg">
               <SelectValue placeholder="Select your visa category" />
             </SelectTrigger>
             <SelectContent>
@@ -84,9 +83,8 @@ const VisaTab = () => {
           </Select>
         </div>
       </div>
-      <div className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
-        <Image src={searchIcon} alt="search icon" className="size-8" />
-      </div>
+      
+      <SearchIcon link="#" searchText="Search Visa"/>
     </div>
   );
 };

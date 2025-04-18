@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SliderCardWithReview = ({link, image, alt, name :title, review, rating}) => {
   return (
     <Link href="#" key={link} className="block group transition-all px-1">
-    <div className="relative h-[250px] sm:h-[350px] rounded-lg overflow-hidden">
+    <div className="relative h-[220px] sm:h-[350px] rounded-lg overflow-hidden">
       <Image
         src={image}
         alt={alt}
@@ -14,13 +14,13 @@ const SliderCardWithReview = ({link, image, alt, name :title, review, rating}) =
       />
     </div>
     <div className="pt-4">
-      <h3 className="text-lg truncate font-medium mb-1 group-hover:text-primary group-hover:underline transition-colors delay-100">{title}</h3>
-      <div className="flex items-center gap-1.5 text-sm">
+      <h3 className="text-base sm:text-lg truncate font-medium mb-1 group-hover:text-primary group-hover:underline transition-colors delay-100">{title}</h3>
+      <div className="flex items-center gap-1.5 text-xs sm:text-sm">
         <span className="font-medium">{rating}</span>
-        <Star className="w-4 h-4 fill-primary text-primary" />
-        <s4an className="text-black/50 ">
+        <Star className="size-3 sm:size-4 fill-primary text-primary" />
+        <span className="text-black/50 ">
           ({review} Review&apos;s)
-        </s4an>
+        </span>
       </div>
     </div>
   </Link>

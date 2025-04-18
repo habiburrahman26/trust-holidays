@@ -146,7 +146,7 @@ const Footer = () => {
                 </li>
               </ul>
 
-              <div className="space-y-1.5 md:space-y-2.5 pt-4">
+              {/* <div className="space-y-1.5 md:space-y-2.5 pt-4">
                 <h4 className="font-semibold">DOWNLOAD APP</h4>
                 <Link href="#" className="inline-block">
                   <Image
@@ -157,7 +157,7 @@ const Footer = () => {
                     className="h-10 w-auto"
                   />
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

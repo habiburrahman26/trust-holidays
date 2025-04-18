@@ -73,20 +73,20 @@ const HeroTabs = () => {
             <TabsTrigger
               key={tab.value}
               value={tab.value}
-              className="flex items-center gap-3.5 py-3.5 border-b-2 border-white data-[state=active]:border-primary rounded-none data-[state=active]:shadow-none"
+              className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3.5 py-1.5 sm:py-3.5 border-b-2 border-white data-[state=active]:border-primary rounded-none data-[state=active]:shadow-none"
             >
               <Image
                 src={activeTab === tab.value ? tab.activeIcon : tab.icon}
                 alt={`${tab.label} icon`}
                 className="size-5"
               />
-              {tab.label}
+              <span className='text-sm sm:text-base'>{tab.label}</span>
             </TabsTrigger>
           ))}
         </TabsList>
         {tabs.map((tab) => (
           <TabsContent className="h-auto" key={tab.value} value={tab.value}>
-            <div className="px-10 pt-7 pb-12">
+            <div className="px-2 sm:px-10 pt-7 pb-12">
               {tab.component && <tab.component />}
             </div>
           </TabsContent>

@@ -21,14 +21,14 @@ const Hero = () => {
           </video>
         </div>
 
-        <div className='relative z-10 pt-44 3xl:pt-52 pb-20'>
+        <div className='relative z-10 pt-28 sm:pt-44 3xl:pt-52 pb-20'>
           <div className="text-center text-white z-10">
             <h3 className="text-2xl font-medium tracking-[1rem]">Welcome to</h3>
-            <h1 className="text-4xl md:text-7xl font-bold">
+            <h1 className="text-3xl md:text-7xl font-semibold sm:font-bold">
               Trust <span className="text-primary">Holi</span>days
             </h1>
           </div>
-          <div className='-mt-6'>
+          <div className='px-2 sm:-mt-6'>
             <HeroTabs />
           </div>
         </div>

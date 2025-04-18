@@ -17,7 +17,7 @@ export default function Home() {
       <BestHotel />
       <div className="bg-background-secondary section-container">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-black px-2.5 md:px-16 lg:px-32 py-10 mb-10 md:mb-24">
-          <div className='text-sm md:text-base'>
+          <div className='text-xs md:text-base'>
             <h3 className="section-header font-medium text-white pb-2.5">
               Members can save on lifestyle
             </h3>

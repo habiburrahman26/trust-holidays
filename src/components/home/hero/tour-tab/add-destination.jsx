@@ -1,21 +1,19 @@
 import { useState } from "react";
-import Image from "next/image";
-import { format, addDays } from "date-fns";
+import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
-import searchIcon from "@/assets/icon/search.svg";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Link from "next/link";
+import SearchIcon from "../searchIcon";
 
 const AddDestination = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="flex items-center gap-4">
-      <div className="w-full flex items-center gap-4">
+    <div className="flex flex-col sm:flex-row items-center gap-4">
+      <div className="w-full flex flex-col sm:flex-row items-center gap-4">
         <div className="hero-small-card flex flex-col justify-center">
           <h3 className="text-primary font-medium">Add Location</h3>
           {/* <input
@@ -50,9 +48,7 @@ const AddDestination = () => {
         </Popover>
       </div>
 
-      <Link href="tour-package" className="w-[81px] h-[77px] flex items-center justify-center p-6 rounded-lg bg-primary ">
-        <Image src={searchIcon} alt="search icon" className="size-8" />
-      </Link>
+      <SearchIcon link="tour-package" searchText="Search Tour"/>
     </div>
   );
 };

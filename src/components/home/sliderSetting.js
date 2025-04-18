@@ -36,7 +36,7 @@ export const settings = {
     {
       breakpoint: 400,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
   ],

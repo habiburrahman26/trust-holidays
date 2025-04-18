@@ -54,7 +54,7 @@ const ExploreCountry = () => {
             key={index}
             className="block px-1 relative rounded-xl overflow-hidden"
           >
-            <div className="relative h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-[220px] sm:h-[400px] rounded-lg overflow-hidden">
               <Image
                 src={destination.image}
                 alt={destination.name}
@@ -76,10 +76,10 @@ const ExploreCountry = () => {
 
             {/* Content */}
             <div className="absolute bottom-0 w-full px-2 py-4 lg:p-6">
-              <h3 className="text-base truncate lg:text-xl font-medium text-white mb-1">
+              <h3 className="text-base lg:text-xl truncate font-medium text-white mb-1">
                 {destination.name}
               </h3>
-              <p className="text-white text-sm">{destination.description}</p>
+              <p className="text-white text-xs sm:text-sm">{destination.description}</p>
             </div>
           </Link>
         ))}
