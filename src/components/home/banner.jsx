@@ -1,13 +1,12 @@
 import bannerImg from '@/assets/images/banner.png';
-import bannerIcon from '@/assets/icon/banner.svg';
 import playStoreIcon from '@/assets/icon/play-store-black.svg';
 import Image from 'next/image';
 
 const Banner = () => {
   return (
-    <section className="relative py-20 flex flex-col md:flex-row items-center justify-center">
-      <div className="w-full pl-2.5 sm:pl-4 2xl:pl-[350px] basis-1/2">
-        <h3 className="text-2xl md:text-3xl lg:text-4xl text-primary font-medium pb-3.5">
+    <section className="section-container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 place-items-center py-10">
+      <div>
+        <h3 className="section-header text-primary pb-3.5">
           Get the Trust Holiday's App
         </h3>
         <p className="text-xs sm:text-base text-black/50 font-medium pb-4 sm:pb-12">
@@ -17,12 +16,16 @@ const Banner = () => {
           hotel deals.
         </p>
 
-        <Image src={playStoreIcon} alt="play store icon" className="w-32 md:w-44" />
+        <Image
+          src={playStoreIcon}
+          alt="play store icon"
+          className="w-32 md:w-44"
+        />
       </div>
 
-      <div className="relative w-[75%] sm:w-[50%] lg:w-[50%] xl:w-[40%] 6xl:w-[30%] h-[300px] lg:h-[600px] ml-auto">
-        <Image src={bannerImg} alt="banner" fill objectFit="cover" className='z-10' />
-      </div>
+      {/* <div className="relative aspect-[5/4] w-[500px]">
+        <Image src={bannerImg} alt="banner" fill className="object-cover" />
+      </div> */}
     </section>
   );
 };

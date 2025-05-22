@@ -47,7 +47,7 @@ const CheckboxItem = ({ label, value, selectItems, setSelectItems }) => {
   );
 };
 
-const FilterHotel = () => {
+const FilterHotel = ({className}) => {
   const [priceRange, setPriceRange] = useState([5000]);
   const [starCategory, setStarCategory] = useState([]);
   const [selectMealsPlan, setSelectMealsPlan] = useState([]);
@@ -62,7 +62,7 @@ const FilterHotel = () => {
   };
 
   return (
-    <div className="col-span-3">
+    <div className={cn(className)}>
       <div className="flex justify-between items-center pb-6">
         <p className="font-sm text-black/50">Filter</p>
         <Button size="sm" className="rounded shadow-none bg-primaryLight">
