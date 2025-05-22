@@ -12,8 +12,8 @@ const AddDestination = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-4">
-      <div className="w-full flex flex-col sm:flex-row items-center gap-4">
+    <div className="flex flex-col lg:flex-row items-center gap-4">
+      <div className="w-full flex flex-col lg:flex-row items-center gap-4">
         <div className="hero-small-card flex flex-col justify-center">
           <h3 className="text-primary font-medium">Add Location</h3>
           {/* <input

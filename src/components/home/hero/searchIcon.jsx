@@ -8,12 +8,12 @@ const SearchIcon = ({ link, searchText, className }) => {
     <Link
       href={link}
       className={cn(
-        'flex items-center justify-center gap-2 sm:gap-0 w-full sm:w-[81px] sm:h-[77px] bg-primary p-2 sm:p-6 rounded-lg',
+        'flex items-center justify-center gap-2 lg:gap-0 w-full lg:w-[81px] lg:h-[77px] bg-primary p-2 lg:p-6 rounded-lg',
         className
       )}
     >
-      <Image src={searchIcon} alt="search icon" className="size-5 sm:size-8" />
-      <span className="block sm:hidden text-white text-sm font-medium">{searchText}</span>
+      <Image src={searchIcon} alt="search icon" className="size-5 lg:size-8" />
+      <span className="block lg:hidden text-white text-sm font-medium">{searchText}</span>
     </Link>
   );
 };

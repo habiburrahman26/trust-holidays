@@ -14,8 +14,8 @@ const Oneway = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="pt-6 grid grid-cols-1 sm:grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
-      <div className="relative w-full grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+    <div className="pt-6 grid grid-cols-1 lg:grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
+      <div className="relative w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
         <div className="hero-small-card">
           <p className="text-black text-xs">From</p>
           <h3 className="text-primary font-medium">Dhaka</h3>

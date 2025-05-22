@@ -44,7 +44,7 @@ export const Hotel = () => {
 
   return (
     <div>
-      <div className="flex items-center flex-wrap gap-2 sm:gap-5">
+      <div className="flex items-center flex-wrap gap-2 lg:gap-5">
         <p className="text-sm font-medium">Search For</p>
 
         <RadioGroup
@@ -78,8 +78,8 @@ export const Hotel = () => {
         </RadioGroup>
       </div>
 
-      <div className="pt-6 grid grid-cols-1 sm:grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
-        <div className="relative w-full grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+      <div className="pt-6 grid grid-cols-1 lg:grid-cols-[2.1fr_1fr_1fr_auto] gap-4">
+        <div className="relative w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
           <div className="hero-small-card">
             <p className="text-black text-xs">City/Hotel/Resort/Area</p>
             <h3 className="text-primary font-medium">Cox’s Bazer</h3>

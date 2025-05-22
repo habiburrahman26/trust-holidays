@@ -69,7 +69,7 @@ const Tour = () => {
         </RadioGroup>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-6 gap-3 pt-7">
+      <div className="grid [grid-template-columns:repeat(auto-fit,minmax(130px,1fr))] gap-3 pt-7">
         {/* https://res.cloudinary.com/dxtqg7ofg/image/upload/v1739970917/Bhutan_-_260360_sgeokk.png */}
         {[1,1,1,1,1].map((item, i) => (
           <Link
