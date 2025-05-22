@@ -64,7 +64,7 @@ const FilterHotel = ({className}) => {
   return (
     <div className={cn(className)}>
       <div className="flex justify-between items-center pb-6">
-        <p className="font-sm text-black/50">Filter</p>
+        <p className="font-sm text-black font-medium">Filter</p>
         <Button size="sm" className="rounded shadow-none bg-primaryLight">
           Reset
         </Button>

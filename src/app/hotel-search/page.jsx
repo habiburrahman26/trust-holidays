@@ -66,7 +66,7 @@ const page = () => {
                     <CircleX size={24} />
                   </SheetClose>
                 </SheetHeader>
-                <FilterHotel className="h-[calc(100vh-60px)] overflow-y-auto px-4 pb-5" />
+                <FilterHotel className="h-[calc(100vh-60px)] overflow-y-auto px-4 pb-20" />
               </SheetContent>
             </Sheet>
           </div>

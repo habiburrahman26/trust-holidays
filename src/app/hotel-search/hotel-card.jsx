@@ -27,9 +27,9 @@ const HotelCard = () => {
               Hotel Bay Marina
             </h2>
             <div className="flex gap-1.5 order-1 lg:order-2">
-              <Star className="fill-primary stroke-primary size-4" />
-              <Star className="fill-primary stroke-primary size-4" />
-              <Star className="fill-primary stroke-primary size-4" />
+              <Star className="fill-primary stroke-primary size-3 lg:size-4" />
+              <Star className="fill-primary stroke-primary size-3 lg:size-4" />
+              <Star className="fill-primary stroke-primary size-3 lg:size-4" />
             </div>
           </div>
 
