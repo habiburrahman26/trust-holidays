@@ -30,7 +30,7 @@ const page = () => {
       <ModifySearch />
 
       <div className="section-container pb-10">
-        <div className="relative h-44 sm:h-60 lg:h-[400px] 3xl:h-[560px] rounded-lg overflow-hidden">
+        <div className="relative h-48 sm:h-60 lg:h-[400px] 3xl:h-[560px] rounded-lg overflow-hidden">
           <Image src={drizzel} alt="drizzel" fill objectFit="cover" />
         </div>
 
@@ -74,7 +74,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="pt-7">
+            <div className="pt-5 lg:pt-7">
               <Accordion
                 type="multiple"
                 value={activeAccordions}
@@ -88,7 +88,7 @@ const page = () => {
                     className="border px-5 rounded"
                   >
                     <AccordionTrigger
-                      className={`py-2 lg:py-3.5 text-xs lg:text-sm ${
+                      className={`py-2 lg:py-3.5 text-xs md:text-sm ${
                         activeAccordions.includes(item.value)
                           ? 'text-black font-medium'
                           : 'font-normal text-black/50'
@@ -96,7 +96,7 @@ const page = () => {
                     >
                       {item.label}
                     </AccordionTrigger>
-                    <AccordionContent className="text-xs lg:text-sm">
+                    <AccordionContent className="text-xs md:text-sm">
                       {item.content}
                     </AccordionContent>
                   </AccordionItem>
