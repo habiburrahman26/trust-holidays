@@ -102,7 +102,7 @@ const page = () => {
             </div>
           </div>
 
-          {/* <Airlines /> */}
+          <Airlines />
 
           <Tabs
             defaultValue="cheapest"
