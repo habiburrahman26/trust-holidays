@@ -10,7 +10,6 @@ const TourPackage = () => {
   return (
     <section className="bg-background-secondary">
       {/* Mobile */}
-   
 
       {/* Desktop */}
       <ModifySearch />
@@ -19,7 +18,6 @@ const TourPackage = () => {
         <Filter className="hidden lg:block lg:col-span-3" />
 
         <div className="col-span-12 lg:col-span-9">
-          <div>
             <div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 5xl:grid-cols-4 gap-2 lg:gap-3.5 3xl:gap-5">
               {CARD_DATA.map((item) => (
                 <TourCard {...item} />
@@ -27,14 +25,16 @@ const TourPackage = () => {
             </div>
             <div
               className="flex items-center
-             justify-end pt-16 gap-4"
+             justify-end pt-5 lg:pt-16 gap-2 lg:gap-4"
             >
-              <span>Showing Results 1 - 10 of 30</span>
+              <span className="text-xs lg:text-base">
+                Showing Results 1 - 10 of 30
+              </span>
               <div className="space-x-2">
                 {[1, 2, 3].map((item, i) => (
                   <Button
                     variant={i === 0 ? 'default' : 'outline'}
-                    className={`size-10 border rounded-full shadow-none text-lg ${
+                    className={`size-6 lg:size-8 border rounded-full shadow-none text-[10px] lg:text-lg ${
                       i === 0 ? '' : 'bg-background-secondary text-black/50'
                     }`}
                   >
@@ -45,16 +45,15 @@ const TourPackage = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="size-10 border rounded-full shadow-none bg-background-secondary"
+                className="size-6 lg:size-8 border rounded-full shadow-none bg-background-secondary"
               >
                 <Image
                   src={arrowIcon}
                   alt="arrow-icon"
-                  className="size-5 -rotate-90"
+                  className="size-3 lg:size-5 -rotate-90"
                 />
               </Button>
             </div>
-          </div>
         </div>
       </div>
     </section>

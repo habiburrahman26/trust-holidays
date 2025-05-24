@@ -54,13 +54,13 @@ const TourCard = ({name,location,image,days,review,price}) => {
             <p className="text-xs font-medium text-black/50">
               Price Starts from
             </p>
-            <h3 className="text-lg lg:text-2xl font-medium">
+            <h3 className="text-lg lg:text-xl font-medium">
               BDT {price}{' '}
               <span className="text-[10px] font-medium text-black">
                 ( per person )
               </span>
             </h3>
-            <p className="text-15 lg:text-xl font-medium truncate">{name}</p>
+            <p className="text-15 lg:text-lg font-medium truncate">{name}</p>
             <div className="flex items-center gap-2 pt-1">
               <Image src={locationIcon} alt="location icon" className='size-3 lg:size-4'/>
               <span className="text-xs lg:text-sm truncate">
