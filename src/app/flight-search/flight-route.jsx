@@ -6,7 +6,7 @@ const FlightRoute = () => {
   return (
     <>
       {/*mobile -> tab  */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 lg:hidden">
         <div>
           <h3 className="text-sm text-black font-medium">08:00 PM</h3>
           <h3 className="text-xs text-black font-medium">DAC</h3>

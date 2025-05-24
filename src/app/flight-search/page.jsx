@@ -65,7 +65,7 @@ const page = () => {
       {/* mobile -> tab */}
       <RemainingTime className="flex justify-center lg:hidden bg-secondary py-1 mb-1 text-white" />
 
-      <div className="section-container bg-background-secondary grid grid-cols-12 lg:gap-10 pt-5 pb-10 lg:py-10">
+      <div className="section-container bg-background-secondary grid grid-cols-12 lg:gap-10 py-10">
         <Filter className="hidden lg:block lg:col-span-3" />
 
         <div className="col-span-12 lg:col-span-9">
@@ -104,7 +104,7 @@ const page = () => {
 
           <Airlines />
 
-          <Tabs
+           <Tabs
             defaultValue="cheapest"
             value={activeTab}
             onValueChange={setActiveTab}
@@ -163,6 +163,7 @@ const page = () => {
               </TabsTrigger>
             </TabsList>
           </Tabs>
+
 
           <div className="flex flex-col gap-5">
             <FlightCard bestDeal />

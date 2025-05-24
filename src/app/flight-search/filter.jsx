@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select";
 import FlightSchedule from "./flight-schedule";
 import CheckboxItem from "@/components/ui/checkbox-item";
+import { cn } from "@/lib/utils";
 
 
 const Filter = ({className}) => {
@@ -22,7 +23,7 @@ const Filter = ({className}) => {
   const [numberOfStops, setNumberOfStops] = useState([]);
 
   return (
-    <div className={className}>
+    <div className={cn( className)}>
       <div className="flex justify-between items-center pb-6">
         <p className="font-sm text-black/50">Filter</p>
         <Button size="sm" className="rounded shadow-none bg-primaryLight">
