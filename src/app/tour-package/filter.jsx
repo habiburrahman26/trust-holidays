@@ -12,13 +12,13 @@ import {
 } from "@/components/ui/select";
 import CheckboxItem from "@/components/ui/checkbox-item";
 
-const Filter = () => {
+const Filter = ({className}) => {
   const [priceRange, setPriceRange] = useState([5000]);
   const [selectedAirfare, setSelectedAirfare] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
   return (
-    <div className="col-span-3">
+    <div className={className}>
       <div className="flex justify-between items-center pb-6">
         <p className="font-sm text-black/50">Filter</p>
         <Button size="sm" className="rounded shadow-none bg-primaryLight">
@@ -109,13 +109,13 @@ const Filter = () => {
       </div>
 
 
-      <div className="flex items-center justify-center mt-16 bg-[#C4C4C4] h-[450px] rounded-lg text-3xl font-medium">
+      {/* <div className="flex items-center justify-center mt-16 bg-[#C4C4C4] h-[450px] rounded-lg text-3xl font-medium">
         Ads
       </div>
 
       <div className="flex items-center justify-center mt-12 bg-[#C4C4C4] h-[450px] rounded-lg text-3xl font-medium">
         Ads
-      </div>
+      </div> */}
     </div>
   );
 };

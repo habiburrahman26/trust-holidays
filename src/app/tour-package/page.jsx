@@ -9,13 +9,18 @@ import ModifySearch from './modify-search';
 const TourPackage = () => {
   return (
     <section className="bg-background-secondary">
-      <ModifySearch/>
+      {/* Mobile */}
+   
 
-      <div className="grid grid-cols-12 gap-10 section-container py-10">
-        <Filter />
-        <div className="col-span-9">
+      {/* Desktop */}
+      <ModifySearch />
+
+      <div className="grid grid-cols-12 lg:gap-10 section-container py-10">
+        <Filter className="hidden lg:block lg:col-span-3" />
+
+        <div className="col-span-12 lg:col-span-9">
           <div>
-            <div className="grid grid-cols-3 5xl:grid-cols-4 gap-3.5 3xl:gap-5">
+            <div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 5xl:grid-cols-4 gap-2 lg:gap-3.5 3xl:gap-5">
               {CARD_DATA.map((item) => (
                 <TourCard {...item} />
               ))}
@@ -42,7 +47,11 @@ const TourPackage = () => {
                 size="icon"
                 className="size-10 border rounded-full shadow-none bg-background-secondary"
               >
-                <Image src={arrowIcon} alt="arrow-icon" className='size-5 -rotate-90'/>
+                <Image
+                  src={arrowIcon}
+                  alt="arrow-icon"
+                  className="size-5 -rotate-90"
+                />
               </Button>
             </div>
           </div>
