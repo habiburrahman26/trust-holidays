@@ -98,6 +98,10 @@ body {
     @apply bg-background;
   }
 
+  .text-15{
+    font-size: 15px;
+  }
+
   .section-container {
     @apply px-2.5 sm:px-4 xl:px-40;
   }

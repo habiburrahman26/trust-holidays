@@ -91,7 +91,6 @@ const FlightSchedule = () => {
         <div>
           <Button
             variant={activeSchedule === "departure" ? "default" : "secondary"}
-            size="lg"
             className={`shadow-none mr-3 h-10 rounded ${
               activeSchedule === "departure"
                 ? ""
@@ -103,7 +102,6 @@ const FlightSchedule = () => {
           </Button>
           <Button
             variant={activeSchedule === "arrival" ? "default" : "secondary"}
-            size="lg"
             className={`shadow-none h-10 rounded ${
               activeSchedule === "arrival"
                 ? ""

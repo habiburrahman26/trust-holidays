@@ -45,6 +45,7 @@ const page = () => {
         </Button>
       </div>
 
+      {/* mobile -> tab */}
       <RemainingTime className="flex justify-center lg:hidden bg-secondary py-1 mb-1 text-white" />
 
       <div className="section-container bg-background-secondary grid grid-cols-12 lg:gap-10 pt-4 pb-10 lg:py-10">

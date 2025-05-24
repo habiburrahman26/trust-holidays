@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
 import { airlines, flightTypeData, numberOfStopsData } from "@/data/data";
 import {
@@ -13,44 +12,17 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import FlightSchedule from "./flight-schedule";
+import CheckboxItem from "@/components/ui/checkbox-item";
 
-const CheckboxItem = ({ label, value, selectItems, setSelectItems }) => {
-  return (
-    <div className="flex items-center space-x-2">
-      <Checkbox
-        id={value}
-        checked={selectItems.includes(value)}
-        onCheckedChange={(checked) => {
-          setSelectItems((prevState) => {
-            if (checked) {
-              return [...prevState, value];
-            } else {
-              return prevState.filter((item) => item !== value);
-            }
-          });
-        }}
-      />
-      <label
-        htmlFor={value}
-        className={`text-xs ${
-          selectItems.includes(value) ? "text-primary" : "text-black/50"
-        }`}
-      >
-        {label}
-      </label>
-    </div>
-  );
-};
 
-const Filter = () => {
+const Filter = ({className}) => {
   const [priceRange, setPriceRange] = useState([5000]);
   const [selectAirlines, setSelectAirlines] = useState([]);
   const [flightTypes, setFlightTypes] = useState([]);
   const [numberOfStops, setNumberOfStops] = useState([]);
 
-
   return (
-    <div className="col-span-3">
+    <div className={className}>
       <div className="flex justify-between items-center pb-6">
         <p className="font-sm text-black/50">Filter</p>
         <Button size="sm" className="rounded shadow-none bg-primaryLight">
